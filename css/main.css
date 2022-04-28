@@ -4,7 +4,7 @@
   padding: 0;
   box-sizing: border-box; }
 
-.section1 .block1Au, .section1 .block2Au, .contSectionCu .contSectionCu1, .contSectionCu .contSectionCu2, .contSectionCu .contSectionCu3 {
+.fondoAu1 .section1 .block2Au, .contSectionCu .contSectionCu1, .contSectionCu .contSectionCu2, .contSectionCu .contSectionCu3 {
   display: flex;
   align-items: center; }
 
@@ -29,7 +29,7 @@ header {
   background-color: #A3E4D7;
   position: sticky;
   top: 0;
-  z-index: 1; }
+  z-index: 3; }
 
 .section1 {
   grid-area: section1; }
@@ -46,95 +46,97 @@ footer {
   background-color: rgba(112, 105, 105, 0.692); }
 
 /*----Propiedades header----*/
-.headerLogo {
-  text-align: center;
-  padding: 0.2rem; }
-  .headerLogo img {
-    width: 35%; }
-    .headerLogo img:hover {
-      transform: scale(1.025);
-      transition: 0.5s; }
-
-/*Prop del Menu*/
-.headerMenu nav ul {
-  list-style: none;
-  text-align: center;
-  padding-left: 0;
-  margin-bottom: 0.3rem; }
-  .headerMenu nav ul li {
-    display: inline-block;
-    background-color: whitesmoke;
-    margin: 0.1rem;
-    padding: 0px 5px;
-    border-radius: 1rem; }
-    .headerMenu nav ul li:hover {
-      background-color: #77a3d8;
-      transform: scale(1.3);
-      transform: translate(0.1rem, 0.1rem);
-      box-shadow: 3px 3px #333333;
-      transition: 0.5s; }
-    .headerMenu nav ul li a {
-      font-size: 1.25rem;
-      font-weight: bold;
-      color: #4545e0;
-      text-decoration: none; }
-      .headerMenu nav ul li a:hover {
-        color: whitesmoke; }
-
-.headerChart {
-  display: none; }
+header {
+  /*Prop del Menu*/ }
+  header .headerLogo {
+    text-align: center;
+    padding: 0.2rem; }
+    header .headerLogo img {
+      max-width: 115px; }
+      header .headerLogo img:hover {
+        transform: scale(1.025);
+        transition: 0.5s; }
+  header .headerMenu nav ul {
+    list-style: none;
+    text-align: center;
+    padding-left: 0;
+    margin-top: 1rem;
+    margin-bottom: 0.75rem; }
+    header .headerMenu nav ul li {
+      display: inline-block;
+      background-color: whitesmoke;
+      margin: 0.1rem;
+      padding: 0px 3px;
+      border-radius: 0.5rem; }
+      header .headerMenu nav ul li:hover {
+        background-color: #77a3d8;
+        transform: scale(1.2);
+        transform: translate(0.1rem, 0.1rem);
+        box-shadow: 3px 3px #333333;
+        transition: 0.5s; }
+      header .headerMenu nav ul li a {
+        font-size: 0.85rem;
+        font-weight: bold;
+        color: #4545e0;
+        text-decoration: none; }
+        header .headerMenu nav ul li a:hover {
+          color: whitesmoke; }
+  header .headerChart {
+    display: none; }
 
 /*----cierre-Header----*/
 /*----Prop Footer----*/
-.footerImgC {
-  padding-top: 0.2rem;
-  text-align: center; }
-  .footerImgC img {
-    width: 5%; }
-
-.footerText h3 {
-  color: rgba(24, 23, 22, 0.904);
-  font-size: 1rem;
-  font-weight: 600;
-  text-align: center;
-  margin-bottom: 0%; }
-  .footerText h3 span {
-    color: darkblue;
-    font-weight: bolder; }
-
-.footerRedes {
-  text-align: center;
-  margin: 0.1rem; }
-  .footerRedes .sideF, .footerRedes .sideI {
-    width: 7.5%;
-    padding-bottom: 0.1rem; }
-    .footerRedes .sideF:hover, .footerRedes .sideI:hover {
-      transform: scale(1.2);
-      transition: 0.5s; }
+footer {
+  margin-top: 0.5rem; }
+  footer .footerImgC {
+    padding-top: 0.2rem;
+    text-align: center; }
+    footer .footerImgC img {
+      width: 5%; }
+  footer .footerText h3 {
+    color: rgba(24, 23, 22, 0.904);
+    font-size: 1rem;
+    font-weight: 600;
+    text-align: center;
+    margin-bottom: 0%; }
+    footer .footerText h3 span {
+      color: darkblue;
+      font-weight: bolder; }
+  footer .footerRedes {
+    text-align: center;
+    margin: 0.1rem; }
+    footer .footerRedes .sideF, footer .footerRedes .sideI {
+      width: 7.5%;
+      padding-bottom: 0.5rem; }
+      footer .footerRedes .sideF:hover, footer .footerRedes .sideI:hover {
+        transform: scale(1.2);
+        transition: 0.5s; }
 
 /*----Cierre-Footer----*/
 /*----Prop-index----*/
 /*Prop carrusel*/
-.section1 .contenedorCarrusel img {
+.section1 .contGralCarrusel .contCarrusel img {
   border: 0.5rem solid whitesmoke; }
 
-.section1 .carousel-control-prev-icon, .section1 .carousel-control-next-icon {
-  background-color: #777c818b; }
+.section1 .contGralCarrusel .carousel-control-prev, .section1 .contGralCarrusel .carousel-control-next {
+  z-index: 0; }
+  .section1 .contGralCarrusel .carousel-control-prev .carousel-control-prev-icon, .section1 .contGralCarrusel .carousel-control-prev .carousel-control-next-icon, .section1 .contGralCarrusel .carousel-control-next .carousel-control-prev-icon, .section1 .contGralCarrusel .carousel-control-next .carousel-control-next-icon {
+    background-color: #777c818b; }
 
 .mainIndex {
   text-align: center;
   background-color: #f1d0d0; }
   .mainIndex .editHead {
-    font-size: 3rem;
-    padding-top: 0.5rem;
-    margin-bottom: 0.5rem;
+    font-size: 2.75rem;
+    padding: 2rem 3rem 0rem;
+    margin-bottom: 2rem;
     color: #1C2833; }
   .mainIndex .editSubt {
-    font-size: 2.25rem;
+    font-size: 2rem;
     padding-bottom: 1.5rem;
     margin-bottom: 0;
     color: #1c2833d8;
-    font-family: 'Great Vibes', cursive;
+    font-family: "Great Vibes", cursive;
     font-weight: 700; }
   .mainIndex .editP {
     display: none;
@@ -143,11 +145,11 @@ footer {
     font-size: 1.25rem;
     padding: 0rem 5rem; }
 
-.wsAnime {
+.section2 .wsAnime, div .wsAnime {
   position: fixed;
   bottom: 9rem;
   right: 0;
-  width: 140px;
+  width: 75px;
   /*Animacion en loop*/
   animation-name: vive;
   animation-iteration-count: infinite;
@@ -160,14 +162,75 @@ footer {
     transform: scale(1.1); } }
 
 /*----cierre-index----*/
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 480px) {
+  /*-----Prop Header------*/
+  header {
+    /*Prop del Menu*/ }
+    header .headerLogo img {
+      max-width: 150px; }
+    header .headerMenu nav ul {
+      margin: 0.3rem 0rem; }
+      header .headerMenu nav ul li a {
+        font-size: 1.05rem; }
+    header .headerChart {
+      display: none; }
+  /*----cierre-Header----*/
+  /*----Prop Footer----*/
+  footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 10vh; }
+    footer .footerImgC {
+      margin-left: 1rem;
+      padding: 0.25rem; }
+      footer .footerImgC img {
+        width: 40%; }
+    footer .footerText {
+      display: flex; }
+      footer .footerText h3 {
+        font-size: 0.85rem;
+        text-align: center; }
+    footer .footerRedes {
+      margin: 0rem; }
+      footer .footerRedes .sideF, footer .footerRedes .sideI {
+        width: 20%; }
+  /*----Cierre-Footer----*/
+  /*----Prop-index----*/
+  /*Prop carrusel*/
+  .section1 .contGralCarrusel {
+    max-width: 60rem;
+    margin: auto; }
+    .section1 .contGralCarrusel .contCarrusel img {
+      border: 0.5rem solid whitesmoke; }
+  main .mainIndex .editHead {
+    font-size: 3rem;
+    padding: 1.5rem 1rem;
+    margin-bottom: 0rem; }
+  main .mainIndex .editSubt {
+    font-size: 2rem;
+    padding-bottom: 1rem; }
+  main .mainIndex .editP {
+    display: block;
+    color: #1c2833be;
+    font-weight: bold;
+    font-size: 1rem;
+    padding: 0rem 6.66667rem;
+    padding-bottom: 1rem;
+    margin-bottom: 0rem; }
+  .section2 div .wsAnime {
+    bottom: 7rem;
+    width: 100px; }
+  /*----cierre-index----*/ }
+
+@media only screen and (min-width: 1024px) {
   /*-----Prop Header------*/
   header {
     display: flex;
     justify-content: space-between;
     align-items: flex-end; }
     header .headerLogo img {
-      width: 80%;
+      width: 200px;
       margin-left: 2.5rem; }
     header .headerMenu, header .headerChart {
       display: flex;
@@ -178,7 +241,8 @@ footer {
       header .headerChart img {
         width: 50%; }
     header .headerMenu nav ul li {
-      border-radius: 2rem; }
+      border-radius: 2rem;
+      padding: 0.1rem 0.5rem; }
       header .headerMenu nav ul li a {
         justify-content: end;
         align-items: center;
@@ -190,43 +254,43 @@ footer {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    height: 10vh; }
+    height: 15vh;
+    margin-top: 0; }
     footer .footerImgC {
       margin-left: 4rem;
       padding: 1rem; }
       footer .footerImgC img {
         width: 50%; }
     footer .footerText {
-      display: flex;
-      font-size: 1.10rem;
-      text-align: center; }
-    footer .footerRedes {
-      padding: 2rem; }
-      footer .footerRedes .sideF, footer .footerRedes .sideI {
-        width: 25%;
-        margin: 0.5rem; }
+      display: flex; }
+      footer .footerText h3 {
+        font-size: 1.25rem;
+        text-align: center; }
+    footer .footerRedes .sideF, footer .footerRedes .sideI {
+      width: 25%;
+      margin: 0.25rem; }
   /*----Cierre-Footer----*/
   /*-----------------------------*/
   /*----Prop Main-Index----*/
-  .contGralCarrusel {
-    text-align: center; }
-  .contCarrusel {
-    text-align: center;
-    border: 1rem solid whitesmoke; }
-  .mainIndex .editHead {
-    font-size: 4rem;
+  .fondoIndex {
+    background-image: url(../../img/pared.jpg);
+    background-size: cover; }
+    .fondoIndex .contGralCarrusel {
+      padding: 0.5rem; }
+  main .mainIndex .editHead {
+    font-size: 5rem;
     padding-top: 2rem;
     padding-bottom: 1rem; }
-  .mainIndex .editSubt {
+  main .mainIndex .editSubt {
     font-size: 3rem; }
-  .mainIndex .editP {
-    margin: 0rem 7rem;
-    padding-bottom: 3rem;
+  main .mainIndex .editP {
     display: block;
+    margin: 0rem 7rem;
+    padding-bottom: 1.75rem;
     font-size: 1.75rem; }
-  .wsAnime {
-    bottom: 9rem;
-    width: 175px; } }
+  .section2 div .wsAnime {
+    bottom: 7rem;
+    width: 150px; } }
 
 /*----------------------------*/
 /*Grid-About Us*/
@@ -241,7 +305,7 @@ header {
   background-color: #A3E4D7;
   position: sticky;
   top: 0;
-  z-index: 1; }
+  z-index: 3; }
 
 main {
   grid-area: main; }
@@ -260,44 +324,39 @@ footer {
   font-family: 'Roboto', sans-serif;
   background-color: rgba(112, 105, 105, 0.692); }
 
-.contMainAu {
-  background-image: url(../../img/madera.jpg);
-  background-size: cover; }
-
-main .tituloAu {
-  padding: 1rem 0 1.5rem 2rem;
-  text-align: left;
+.fondoAu1 main .tituloAu {
+  padding: 1rem  2rem;
+  text-align: center;
   font-size: 1rem;
   font-weight: bold;
-  color: #1C2833; }
+  color: #1C2833;
+  background-color: #fef6f6; }
 
-.section1 .block1Au {
-  flex-flow: column wrap; }
-  .section1 .block1Au img {
-    margin: 0.3rem;
-    width: 49%;
-    border: 5px solid white; }
-  .section1 .block1Au p {
-    padding: 0.3rem 3rem;
-    text-align: justify;
-    font-family: 'Roboto', sans-serif;
-    font-size: 0.75rem;
-    font-weight: bold;
-    color: #1C2833; }
+.fondoAu1 .section1 .block1Au img {
+  width: 100%; }
 
-.section1 .block2Au {
+.fondoAu1 .section1 .block1Au p {
+  padding: 1rem;
+  text-align: justify;
+  font-family: 'Roboto', sans-serif;
+  font-size: 1rem;
+  color: #dede11;
+  background-color: #353d45;
+  margin-bottom: 0; }
+  .fondoAu1 .section1 .block1Au p .block1AuPbreak {
+    display: none; }
+
+.fondoAu1 .section1 .block2Au {
   flex-flow: column-reverse wrap; }
-  .section1 .block2Au p {
-    padding: 0.3rem 3rem;
+  .fondoAu1 .section1 .block2Au p {
+    padding: 1rem;
     text-align: justify;
     font-family: 'Roboto', sans-serif;
-    font-size: 0.75rem;
-    font-weight: bold;
-    color: #1C2833; }
-  .section1 .block2Au video {
-    margin: 0.3rem;
-    border: 5px solid #130c0c;
-    width: 50%;
+    font-size: 1rem;
+    color: #dede11;
+    background-color: #353d45; }
+  .fondoAu1 .section1 .block2Au video {
+    width: 100%;
     height: 70%; }
 
 .section2 .subAboutUs {
@@ -305,42 +364,141 @@ main .tituloAu {
   text-align: center;
   font-size: 1rem;
   font-weight: bold;
-  color: #1C2833; }
+  color: #1C2833;
+  background-color: #fef6f6; }
 
-.section2 .block3Au {
+.section2 .card-group .card {
+  margin: 0;
   text-align: center; }
-  .section2 .block3Au .img1, .section2 .block3Au .img2 {
-    border: 5px solid white;
-    width: 50%; }
-  .section2 .block3Au p {
-    padding: 0.3rem 3rem;
-    text-align: justify;
-    font-family: 'Roboto', sans-serif;
-    font-size: 0.75rem;
-    font-weight: bold;
-    color: #1C2833; }
-
-.card-group {
-  margin: 1rem; }
-  .card-group .card {
-    margin: 1rem;
-    text-align: center; }
-
-.card-text {
-  text-align: justify; }
-
-.card-title {
-  text-align: center; }
-
-@media (min-width: 576px) {
-  .card-group {
-    display: block; }
-    .card-group .card {
-      margin: 1rem;
-      text-align: center; } }
+  .section2 .card-group .card .card-body-1, .section2 .card-group .card .card-body-3 {
+    background-color: #f0a83c; }
+    .section2 .card-group .card .card-body-1 .card-title, .section2 .card-group .card .card-body-3 .card-title {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: white;
+      height: 7vh; }
+  .section2 .card-group .card .card-body-2 {
+    background-color: #459a45; }
+    .section2 .card-group .card .card-body-2 .card-text {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: justify;
+      padding: 1rem;
+      color: white;
+      height: 10rem; }
 
 /*---cierre-About Us---*/
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 480px) {
+  /*-----Prop AboutUs------*/
+  main .tituloAu {
+    padding: 1rem  2rem;
+    text-align: left;
+    background-color: #fef6f6; }
+    main .tituloAu h1 {
+      font-size: 2.5rem;
+      font-weight: bold;
+      color: #353d45; }
+  .section1 .block1Au {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+    background-color: #353d45; }
+    .section1 .block1Au img {
+      margin: 0;
+      padding-left: 0.5rem;
+      padding-top: 0.5rem;
+      max-width: 30%; }
+    .section1 .block1Au p {
+      padding: 1rem;
+      text-align: justify;
+      font-family: 'Roboto', sans-serif;
+      font-size: 1rem;
+      color: #dede11;
+      background-color: #353d45;
+      margin-bottom: 0; }
+      .section1 .block1Au p .block1AuPbreak {
+        display: none; }
+  .section1 .block2Au {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+    background-color: #353d45; }
+    .section1 .block2Au p {
+      padding: 1rem;
+      text-align: justify;
+      font-family: 'Roboto', sans-serif;
+      font-size: 1rem;
+      color: #dede11;
+      background-color: #353d45;
+      margin-bottom: 0;
+      text-align: justify; }
+    .section1 .block2Au video {
+      max-width: 40%;
+      padding-right: 0.5rem;
+      padding-bottom: 0.5rem; } }
+
+.section2 .subAboutUs {
+  padding: 0.75rem;
+  text-align: center;
+  background-color: #fef6f6; }
+  .section2 .subAboutUs h2 {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #353d45; }
+
+.section2 .card-group {
+  margin: 1rem; }
+  .section2 .card-group .card {
+    margin: 0;
+    text-align: center; }
+    .section2 .card-group .card .card-body-1, .section2 .card-group .card .card-body-3 {
+      background-color: #f0a83c; }
+      .section2 .card-group .card .card-body-1 .card-title, .section2 .card-group .card .card-body-3 .card-title {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: white;
+        height: 7vh; }
+    .section2 .card-group .card .card-body-2 {
+      background-color: #459a45; }
+      .section2 .card-group .card .card-body-2 .card-text {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: justify;
+        padding: 1rem;
+        color: white;
+        height: 10rem; }
+
+@media (min-width: 576px) {
+  .card-group .card {
+    margin: 0; }
+    .card-group .card .card-body-1, .card-group .card .card-body-3 {
+      height: 100%; }
+      .card-group .card .card-body-1 .card-title, .card-group .card .card-body-3 .card-title {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: white;
+        height: 10vh; }
+    .card-group .card .card-body-2 {
+      height: 100%;
+      background-color: #459a45; }
+      .card-group .card .card-body-2 .card-text {
+        text-align: center;
+        font-size: 0.75rem;
+        padding: 0;
+        color: white; } }
+
+@media (min-width: 768px) {
+  .card-group .card .card-body-2 .card-text {
+    font-size: 1rem; } }
+
+@media only screen and (min-width: 1024px) {
   /*--Prop Main-AboutUs--*/
   main .tituloAu {
     font-size: 1.5rem;

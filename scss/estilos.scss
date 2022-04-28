@@ -19,98 +19,103 @@
 //---Version Mobile
 
 //ubicacion del logo
-.headerLogo{
-    text-align: center;
-    padding: 0.2rem;
-    img{
-        width:35%;
-        //animacion del logo + link
-        &:hover{
+header{
+   .headerLogo{
+      text-align: center;
+      padding: 0.2rem;
+      img{
+         max-width: 115px;
+         //animacion del logo + link
+         &:hover{
             transform: scale(1.025);
             transition: 0.5s;  
-        }
-    }
- }
-
-/*Prop del Menu*/
-.headerMenu nav ul{
-    list-style: none;
-    text-align: center;
-    padding-left: 0;
-    margin-bottom: 0.3rem;
-    //edicion de menu
-    li{
-        display: inline-block;
-        background-color: whitesmoke;
-        margin: 0.1rem;
-        padding: 0px 5px;
-        border-radius: 1rem;
-        //animacion del menu
-        &:hover{
-            background-color:#77a3d8;
-            transform: scale(1.3);
-            transform: translate(0.1rem, 0.1rem);
-            box-shadow: 3px 3px rgb(51, 51, 51);
-            transition: 0.5s;
-        }
-        //eliminacion de vineta
-        a{
-            font-size: 1.25rem;
+         }
+      }
+   }
+   /*Prop del Menu*/
+   .headerMenu nav ul{
+      list-style: none;
+      text-align: center;
+      padding-left: 0;
+      margin-top: 1rem;
+      margin-bottom: 0.75rem;
+      //edicion de menu
+      li{
+         display: inline-block;
+         background-color: whitesmoke;
+         margin: 0.1rem;
+         padding: 0px 3px;
+         border-radius: 0.5rem;
+            //animacion del menu
+            &:hover{
+               background-color:#77a3d8;
+               transform: scale(1.2);
+               transform: translate(0.1rem, 0.1rem);
+               box-shadow: 3px 3px rgb(51, 51, 51);
+               transition: 0.5s;
+            }
+         //eliminacion de vineta
+         a{
+            font-size: 0.85rem;
             font-weight: bold;
             color:nth($colorFuente, 1);
             text-decoration: none;
             &:hover{
-                color:nth($colorFuente, 7);
+               color:nth($colorFuente, 7);
             }
-        }
-    }
-}
-//ajuste medida del carrito
-.headerChart{  
-    display: none;
+         }
+      }
+   }
+   //ajuste medida del carrito
+   .headerChart{  
+      display: none;
+   }
 }
 /*----cierre-Header----*/
 //--version Mobile
 
 /*----Prop Footer----*/
 //--version Mobile
-//Propiedades de "C"
-.footerImgC{
-    padding-top: 0.2rem; 
-    text-align: center;
-    //Size imagen legal "C"*
-    img{
-        width: 5%;
-    }
-}
-//color y size del H3
-.footerText{
-   h3{
-      color: nth($colorFuente,3);
-      font-size: 1rem;
-      font-weight: 600;
+footer{
+   margin-top: 0.5rem;
+   //Propiedades de "C"
+   .footerImgC{
+      padding-top: 0.2rem; 
       text-align: center;
-      margin-bottom: 0%;
-      // detalle de linea
-      span{
-        color: nth($colorFuente,2);
-        font-weight: bolder;
+      //Size imagen legal "C"*
+      img{
+         width: 5%;
       }
    }
-}
-//ubicacionde redes sociales
-.footerRedes{
-    text-align: center;
-    margin: 0.1rem;
-     //Face-Inst size
-    .sideF, .sideI{
-        width: 7.5%;
-        padding-bottom: 0.1rem;
-        &:hover{
-            transform: scale(1.2);
-            transition: 0.5s;
-        }
-    }
+   //color y size del H3
+   .footerText{
+      h3{
+         color: nth($colorFuente,3);
+         font-size: 1rem;
+         font-weight: 600;
+         text-align: center;
+         margin-bottom: 0%;
+         // detalle de linea
+         span{
+         color: nth($colorFuente,2);
+         font-weight: bolder;
+         }
+      }
+   }
+   //ubicacionde redes sociales
+   .footerRedes{
+      text-align: center;
+      margin: 0.1rem;
+      //Face-Inst size
+      .sideF, .sideI{
+         width: 7.5%;
+         padding-bottom: 0.5rem;
+         &:hover{
+               transform: scale(1.2);
+               transition: 0.5s;
+         }
+      }
+   }
 }
 /*----Cierre-Footer----*/
 
@@ -119,14 +124,18 @@
 
 /*Prop carrusel*/
 .section1{
-   .contenedorCarrusel{
-      img{
-         border: 0.5rem solid rgb(245, 245, 245);
-      
+   .contGralCarrusel{
+      .contCarrusel{
+         img{
+            border: 0.5rem solid rgb(245, 245, 245);
+         }
       }
-   }
-   .carousel-control-prev-icon, .carousel-control-next-icon{
-      background-color: #777c818b;
+      .carousel-control-prev, .carousel-control-next{
+         z-index: 0;
+         .carousel-control-prev-icon, .carousel-control-next-icon{
+            background-color: #777c818b;
+         }
+      }
    }
 }
 //section2-Prop. H1-H2-P
@@ -134,18 +143,18 @@
    text-align: center;
    background-color: $colorFondo1;
    .editHead{
-      font-size: 3rem;
-      padding-top: 0.5rem;
-      margin-bottom: 0.5rem;
+      font-size: 2.75rem;
+      padding: 2rem 3rem 0rem;
+      margin-bottom: 2rem;
       color:nth($colorFuente,4);     
    }
    .editSubt{
-   font-size: 2.25rem;
-   padding-bottom: 1.5rem;
-   margin-bottom: 0; 
-   color:nth($colorFuente,5);
-   font-family: 'Great Vibes', cursive;
-   font-weight: 700;
+      font-size: 2rem;
+      padding-bottom: 1.5rem;
+      margin-bottom: 0; 
+      color:nth($colorFuente,5);
+      font-family: $tipoFuente2;
+      font-weight: 700;
    }
    .editP{
       display: none;
@@ -156,33 +165,150 @@
    }
 }
 //section3-WS
-.wsAnime{
-    position: fixed;
-    bottom: 9rem;
-    right: 0;
-    width: 140px;
-    /*Animacion en loop*/
-    animation-name: vive;
-    animation-iteration-count: infinite;
-    animation-duration: 5s;
-    @keyframes vive{
-        0%{ transform: scale(1)}
-        50%{ transform: scale(1.10)}
-    }
+.section2, div{
+   .wsAnime{
+      position: fixed;
+      bottom: 9rem;
+      right: 0;
+      width: 75px;
+      /*Animacion en loop*/
+      animation-name: vive;
+      animation-iteration-count: infinite;
+      animation-duration: 5s;
+      @keyframes vive{
+         0%{ transform: scale(1)}
+         50%{ transform: scale(1.10)}
+      }
+   }
 }
 /*----cierre-index----*/
 //---version Mobile
 
-@media only screen and (min-width: 768px){
+@media only screen and (min-width: 480px){
+   /*-----Prop Header------*/
+   //---version tablet
+   header{
+      .headerLogo{
+         img{
+            max-width: 150px;
+         }
+      }
+      /*Prop del Menu*/
+      .headerMenu nav ul{
+            margin: 0.3rem 0rem ;
+            //edicion de menu
+            li{
+               //animacion del menu
+               a{
+                  font-size: 1.05rem;
+               }
+            }
+         }
+      //ajuste medida del carrito
+      .headerChart{  
+            display: none;
+      }
+   }
+  /*----cierre-Header----*/
+  //--version tablet
+  
+  /*----Prop Footer----*/
+  //--version tablet
+   footer{
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      height: 10vh;
+      //Prop de "C"
+      .footerImgC{
+         margin-left: 1rem;
+         padding: 0.25rem; 
+         img{
+            width: 40%;
+         }
+      }
+      //color y size del H3
+      .footerText{
+         display: flex;
+         h3{
+         font-size: 0.85rem;
+         text-align: center;
+         }
+      }
+      //ubicacionde redes sociales
+      .footerRedes{
+         margin: 0rem;
+         //Face-Inst size
+         .sideF, .sideI{
+            width: 20%;
+         }
+      }
+   }
+  /*----Cierre-Footer----*/
+  //--version tablet
+  
+  /*----Prop-index----*/
+  //--version tablet
+  /*Prop carrusel*/
+   .section1{
+     // background-color:$colorFondo1 ;
+     
+      .contGralCarrusel{
+        
+         max-width: 60rem;
+         margin: auto;
+         .contCarrusel{
+            img{
+               border: 0.5rem solid rgb(245, 245, 245);
+            }
+         }
+        
+      }
+   }
+  //section2-Prop. H1-H2-P
+   main{
+      .mainIndex{
+         .editHead{
+            font-size: 3rem;
+            padding: 1.5rem 1rem;
+            margin-bottom: 0rem;
+         }
+         .editSubt{
+         font-size: 2rem;
+         padding-bottom: 1rem;
+         }
+         .editP{
+            display: block;
+            color: nth($colorFuente, 6);
+            font-weight: bold;
+            font-size: 1rem;
+            padding: 0rem $pdP/3;
+            padding-bottom: 1rem;
+            margin-bottom: 0rem;
+         }
+      }
+   }
+  //section3-WS
+   .section2 div{
+      .wsAnime{
+         bottom: 7rem;
+         width: 100px;
+      }   
+   }
+   /*----cierre-index----*/
+  //version tablet
+}
+
+@media only screen and (min-width: 1024px){
       
    /*-----Prop Header------*/
-   //---version laptop
+   //---version desktop
    header{
       display: flex;
       justify-content: space-between;
       align-items: flex-end;
       .headerLogo img{
-         width: 80%;
+         width: 200px;
          margin-left: 2.5rem;
       }
       .headerMenu, .headerChart{
@@ -191,36 +317,37 @@
       .headerChart{
          text-align: center;
          img{
-               width: 50%;
+            width: 50%;
          }
       }
       .headerMenu{
          nav{
-               ul{
-                  li{
-                     border-radius: 2rem;
-                     a{
-                     justify-content: end;
-                     align-items: center;
-                     font-size: 1.1rem;
-                     font-weight: bold;
-                     
-                     }
+            ul{
+               li{
+                  border-radius: 2rem;
+                  padding: 0.1rem 0.5rem;
+                  a{
+                  justify-content: end;
+                  align-items: center;
+                  font-size: 1.1rem;
+                  font-weight: bold;
                   }
                }
+            }
          }
       } 
    }
    /*----Cierre-header----*/
-   //--version Laptop 768px
+   //--version desktop
 
    /*----Prop Footer----*/
-   //---version Laptop 768px 
+   //---version desktop 
    footer{
       display: flex;
       justify-content: space-between;
       align-items: center;
-      height: 10vh;
+      height: 15vh;
+      margin-top: 0;
       //Prop de "C"
       .footerImgC{
          margin-left: 4rem;
@@ -232,102 +359,104 @@
       //color y size del H3
       .footerText{
          display: flex;
-         font-size: 1.10rem;
+         h3{
+         font-size: 1.25rem;
          text-align: center;
+         }
       }
       //ubicacionde redes sociales
       .footerRedes{
-         padding: 2rem;
          //Face-Inst size
          .sideF, .sideI{
                width: 25%;
-               margin: 0.5rem;
+               margin: 0.25rem;
          }
       }
    }
    /*----Cierre-Footer----*/
-   //--version Laptop 768px
+   //--version desktop
    /*-----------------------------*/
    /*----Prop Main-Index----*/
-   //--version laptop 768px
-
-   //carrusel
-   .contGralCarrusel{
-      text-align: center;
-   }
-   .contCarrusel{
-      text-align: center;
-      border: 1rem solid whitesmoke;
+   //--version desktop
+   .fondoIndex{
+      @include estiloFondo1;
+      //carrusel
+      .contGralCarrusel{
+         padding: 0.5rem;
+      }
    }
    //section2-index
-   //H1-H2-P color, size, margenes y paddins
-   .mainIndex{
-      .editHead{
-         font-size: 4rem;
-         padding-top: 2rem;
-         padding-bottom: 1rem;
-      }
-      .editSubt{
-         font-size: 3rem;
-      }
-      .editP{
-         margin: 0rem $mgP - 13;
-         padding-bottom: 3rem;
-         display: block;
-         font-size: 1.75rem;
+   //size, margins & paddins
+   main{
+      .mainIndex{
+         .editHead{
+            font-size: 5rem;
+            padding-top: 2rem;
+            padding-bottom: 1rem;
+         }
+         .editSubt{
+            font-size: 3rem;
+         }
+         .editP{
+            display: block;
+            margin: 0rem $mgP - 13;
+            padding-bottom: 1.75rem;
+            font-size: 1.75rem;
+         }
       }
    }
-   .wsAnime{
-      bottom: 9rem;
-      width: 175px;
+   .section2 div{
+      .wsAnime{
+         bottom: 7rem;
+         width: 150px;
+      }
    }
 }
+
 /*----------------------------*/
-//asociamos grid al html
+
+//asociamos grid AboutUs al html
 @import "layout/gridAu";
     
 //*----Prop-aboutUs----*/
 //--Version Mobile
 
 //contenedor Main-AboutUs
-.contMainAu{
-   @include estiloFondo2
-   }  
-//titulo About us
-main{
-   .tituloAu{
-      padding: 1rem 0 1.5rem 2rem;
-      text-align: left;
-      font-size: 1rem;
-      font-weight: bold;
-      color:nth($colorFuente,4);
-   }
-}
-//Section1
-.section1{
-   .block1Au{
-      @extend %stileBlock;
-      flex-flow: column wrap;
-      img{
-         margin: 0.3rem;
-         width: 49%;
-         border:5px solid white;
-      }
-      p{
-         @include blockP;
+.fondoAu1{
+   main{
+      .tituloAu{
+         padding: 1rem  2rem;
+         text-align: center;
+         font-size: 1rem;
+         font-weight: bold;
+         color:nth($colorFuente,4);
+         background-color: rgb(254, 246, 246);
       }
    }
-   .block2Au{
-      flex-flow: column-reverse wrap;
-      @extend %stileBlock;
-      p{
-         @include blockP;
+   //Section1
+   .section1{
+      .block1Au{
+         img{
+            width: 100%;
+         }
+         p{
+            @include blockP;
+            margin-bottom: 0;
+            .block1AuPbreak{
+               display: none;
+            }
+         }
       }
-      video{
-         margin: 0.3rem;
-         border: 5px solid rgb(19, 12, 12);
-         width: 50%;
-         height: 70%;
+      .block2Au{
+         flex-flow: column-reverse wrap;
+         @extend %stileBlock;
+         p{
+            @include blockP;
+         }
+         video{
+            width: 100%;
+            height: 70%;
+         }
       }
    }
 }
@@ -339,48 +468,188 @@ main{
       font-size: 1rem;
       font-weight: bold;
       color: #1C2833;
+      background-color: rgb(254, 246, 246);
    }
-   .block3Au{
-      text-align: center;
-      .img1, .img2{
-         border: 5px solid white;
-         width: 50%;
+   .card-group{
+      .card{
+         margin: 0;
+         text-align: center;
+         .card-body-1, .card-body-3{
+            background-color: rgb(240, 168, 60);
+            .card-title{
+               display: flex;
+               justify-content: center;
+               align-items: center;
+               color: white;
+               height: 7vh;
+            }
+         }
+         .card-body-2{
+            background-color: rgb(69, 154, 69);
+            .card-text{
+               display: flex;
+               justify-content: center;
+               align-items: center;
+               text-align: justify;
+               padding: 1rem ;
+               color: white;
+               height: 10rem;
+            }
+         }
       }
-      p{
-         @include blockP;
-      }
-
    }
 }
-// terminar de sobre escribir componente bootstrap
+/*---cierre-About Us---*/
+//---version Mobile
+@media only screen and (min-width: 480px){
+   /*-----Prop AboutUs------*/
+   //---version tablet
+
+   //contenedor Main-AboutUs
+   main{
+      .tituloAu{
+         padding: 1rem  2rem;
+         text-align: left;
+         background-color: rgb(254, 246, 246);
+         h1{
+            font-size: 2.5rem;
+            font-weight: bold;
+            color: #353d45;
+         }
+      }
+   }
+   //Section1
+   .section1{
+      .block1Au{
+        // background-color: $colorFondo1;
+         display: flex;
+         flex-flow: row nowrap;
+         justify-content: center;
+         align-items: center;
+         background-color:  #353d45;
+         img{
+            margin: 0;
+            padding-left: 0.5rem;
+            padding-top: 0.5rem;
+            max-width: 30%;
+           // border:5px solid white;
+         }
+         p{
+            @include blockP;
+            margin-bottom: 0;
+            .block1AuPbreak{
+               display: none;
+            }
+         }
+      }
+      .block2Au{
+         display: flex;
+         flex-flow: row nowrap;
+         justify-content: center;        
+         align-items: center;
+         background-color:  #353d45;
+         p{
+            @include blockP;
+            margin-bottom: 0;
+            text-align: justify;
+         }
+         video{
+            //margin: 0.3rem;
+           // border: 5px solid rgb(19, 12, 12);
+            max-width: 40%;
+            padding-right: 0.5rem;
+            padding-bottom: 0.5rem;
+            
+         }
+      }
+   }
+}
+//Prop Filosofia
+.section2{
+   .subAboutUs{
+      padding: 0.75rem;
+      text-align: center;
+      background-color: rgb(254, 246, 246);
+      h2{
+         font-size: 1.5rem;
+         font-weight: bold;
+         color: #353d45;
+      }
+   }
    .card-group{
       margin: 1rem;
       .card{
-         margin: 1rem;
+         margin: 0;
          text-align: center;
+         .card-body-1, .card-body-3{
+            background-color: rgb(240, 168, 60);
+            .card-title{
+               display: flex;
+               justify-content: center;
+               align-items: center;
+               color: white;
+               height: 7vh;
+            }
+         }
+         .card-body-2{
+            background-color: rgb(69, 154, 69);
+            .card-text{
+               display: flex;
+               justify-content: center;
+               align-items: center;
+               text-align: justify;
+               padding: 1rem ;
+               color: white;
+               height: 10rem;
+            }
+         }
       }
    }
-   .card-text{
-      text-align: justify;
-   }
-   .card-title{
-      text-align: center;
-   }
-
-   @media (min-width: 576px){
-   .card-group{
-      display: block;
-      .card{
-         margin: 1rem;
-         text-align: center;
-      }
-   } 
 }
 
-/*---cierre-About Us---*/
-//---version Mobile
+@media (min-width: 576px){
+   .card-group{
+      //margin: 1rem;
+      .card{
+         margin: 0;
+         .card-body-1, .card-body-3{
+            height: 100%;
+            .card-title{
+               display: flex;
+               justify-content: center;
+               align-items: center;
+               color: white;
+               height: 10vh;
+            }
+         }
+         .card-body-2{
+            height: 100%;
+            background-color: rgb(69, 154, 69);
+            .card-text{
+               text-align: center;
+               font-size: 0.75rem;
+               padding: 0;
+               color: white;
+            }
+         }
+      }
+   }
+}
 
-@media only screen and (min-width:768px){
+@media (min-width: 768px){
+   .card-group{
+      .card{
+         .card-body-2{
+            .card-text{
+               font-size: 1rem;
+
+            }
+         }
+      }
+   }
+}      
+
+@media only screen and (min-width:1024px){
      
    /*--Prop Main-AboutUs--*/
    //version laptop

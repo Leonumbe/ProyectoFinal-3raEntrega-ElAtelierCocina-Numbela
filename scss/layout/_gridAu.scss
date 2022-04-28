@@ -11,29 +11,29 @@
                          "section2 section2 section2 section2"
                          "section3 section3 section3 section3"
                          "footer footer footer footer";
- }
- /*Prop-Hijos*/
- header{
-    grid-area: header;
-    background-color: #A3E4D7;
-    position: sticky;
-    top: 0;
-    z-index: 1;
- }      
- main{
-    grid-area: main;
- }
- .section1{
-    grid-area: section1;
- }
- .section2{
-    grid-area: section2;
- }
- .section3{
-    grid-area: section3;
- }
- footer{
-    grid-area: footer;
-    font-family: 'Roboto', sans-serif;
-    background-color: rgba(112, 105, 105, 0.692);
- }
+}
+/*Prop-Hijos*/
+header{
+   grid-area: header;
+   background-color: $colorFondoHeader;
+   position: sticky;
+   top: 0;
+   z-index: 3;
+}      
+main{
+   grid-area: main;
+}
+.section1{
+   grid-area: section1;
+}
+.section2{
+   grid-area: section2;
+}
+.section3{
+   grid-area: section3;
+}
+footer{
+   grid-area: footer;
+   font-family: 'Roboto', sans-serif;
+   background-color: $colorFondoFooter;
+}
