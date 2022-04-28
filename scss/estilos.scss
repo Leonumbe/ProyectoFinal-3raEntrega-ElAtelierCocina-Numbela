@@ -502,112 +502,115 @@ footer{
 /*---cierre-About Us---*/
 //---version Mobile
 @media only screen and (min-width: 480px){
+  
    /*-----Prop AboutUs------*/
    //---version tablet
 
    //contenedor Main-AboutUs
-   main{
-      .tituloAu{
-         padding: 1rem  2rem;
-         text-align: left;
+   .fondoAu1{
+      //titulo About Us
+      main{
+         .tituloAu{
+            padding: 1rem  2rem;
+            text-align: left;
+            background-color: rgb(254, 246, 246);
+            h1{
+               font-size: 2.5rem;
+               font-weight: bold;
+               color: #353d45;
+            }
+         }
+      }
+      //Section1
+      .section1{
+         .block1Au{
+         // background-color: $colorFondo1;
+            display: flex;
+            flex-flow: row nowrap;
+            justify-content: center;
+            align-items: center;
+            background-color:  #353d45;
+            img{
+               margin: 0;
+               padding-left: 0.5rem;
+               padding-top: 0.5rem;
+               max-width: 30%;
+            // border:5px solid white;
+            }
+            p{
+               @include blockP;
+               margin-bottom: 0;
+               .block1AuPbreak{
+                  display: none;
+               }
+            }
+         }
+         .block2Au{
+            display: flex;
+            flex-flow: row nowrap;
+            justify-content: center;        
+            align-items: center;
+            background-color:  #353d45;
+            p{
+               @include blockP;
+               margin-bottom: 0;
+               text-align: justify;
+            }
+            video{
+               //margin: 0.3rem;
+            // border: 5px solid rgb(19, 12, 12);
+               max-width: 40%;
+               padding-right: 0.5rem;
+               padding-bottom: 0.5rem;
+            }
+         }
+      }
+   }
+   //Prop Filosofia
+   .section2{
+      .subAboutUs{
+         padding: 0.75rem;
+         text-align: center;
          background-color: rgb(254, 246, 246);
-         h1{
-            font-size: 2.5rem;
+         h2{
+            font-size: 1.5rem;
             font-weight: bold;
             color: #353d45;
          }
       }
-   }
-   //Section1
-   .section1{
-      .block1Au{
-        // background-color: $colorFondo1;
-         display: flex;
-         flex-flow: row nowrap;
-         justify-content: center;
-         align-items: center;
-         background-color:  #353d45;
-         img{
+      .card-group{
+         margin: 1rem;
+         .card{
             margin: 0;
-            padding-left: 0.5rem;
-            padding-top: 0.5rem;
-            max-width: 30%;
-           // border:5px solid white;
-         }
-         p{
-            @include blockP;
-            margin-bottom: 0;
-            .block1AuPbreak{
-               display: none;
+            text-align: center;
+            .card-body-1, .card-body-3{
+               background-color: rgb(240, 168, 60);
+               .card-title{
+                  display: flex;
+                  justify-content: center;
+                  align-items: center;
+                  color: white;
+                  height: 7vh;
+               }
             }
-         }
-      }
-      .block2Au{
-         display: flex;
-         flex-flow: row nowrap;
-         justify-content: center;        
-         align-items: center;
-         background-color:  #353d45;
-         p{
-            @include blockP;
-            margin-bottom: 0;
-            text-align: justify;
-         }
-         video{
-            //margin: 0.3rem;
-           // border: 5px solid rgb(19, 12, 12);
-            max-width: 40%;
-            padding-right: 0.5rem;
-            padding-bottom: 0.5rem;
-            
-         }
-      }
-   }
-}
-//Prop Filosofia
-.section2{
-   .subAboutUs{
-      padding: 0.75rem;
-      text-align: center;
-      background-color: rgb(254, 246, 246);
-      h2{
-         font-size: 1.5rem;
-         font-weight: bold;
-         color: #353d45;
-      }
-   }
-   .card-group{
-      margin: 1rem;
-      .card{
-         margin: 0;
-         text-align: center;
-         .card-body-1, .card-body-3{
-            background-color: rgb(240, 168, 60);
-            .card-title{
-               display: flex;
-               justify-content: center;
-               align-items: center;
-               color: white;
-               height: 7vh;
-            }
-         }
-         .card-body-2{
-            background-color: rgb(69, 154, 69);
-            .card-text{
-               display: flex;
-               justify-content: center;
-               align-items: center;
-               text-align: justify;
-               padding: 1rem ;
-               color: white;
-               height: 10rem;
+            .card-body-2{
+               background-color: rgb(69, 154, 69);
+               .card-text{
+                  display: flex;
+                  justify-content: center;
+                  align-items: center;
+                  text-align: justify;
+                  padding: 1rem ;
+                  color: white;
+                  height: 10rem;
+               }
             }
          }
       }
    }
 }
 
-@media (min-width: 576px){
+@media only screen and (min-width: 576px){
    .card-group{
       //margin: 1rem;
       .card{
@@ -636,13 +639,24 @@ footer{
    }
 }
 
-@media (min-width: 768px){
+@media only screen and (min-width: 768px){
+   section1{
+      .block1Au{
+         p{
+            .block1AuPbreak{
+               display: block;
+            }
+         }
+      }
+   }
    .card-group{
       .card{
          .card-body-2{
+            display: flex;
+            justify-content: center;
+            align-items: center;
             .card-text{
                font-size: 1rem;
-
             }
          }
       }
@@ -652,85 +666,58 @@ footer{
 @media only screen and (min-width:1024px){
      
    /*--Prop Main-AboutUs--*/
-   //version laptop
-   main{
-      .tituloAu{
-         @include tituloVs768
-      }
-   }
+   //version desktop
    .section1{
       .block1Au{
          flex-flow: row nowrap;
          justify-content: center;
-         margin: 1rem 4rem;
+         margin: 0rem;
+         padding: 1rem 10rem;
          img{
+            padding-bottom: 0.5rem;
             width: 35%;
-            margin-left: 7rem;
          }
          p{
             text-align: justify;
-            font-size: 1.1rem;
-            letter-spacing: 0.1rem;
-         } 
-      }
+            font-size: 1.25rem;
+            padding-left: 3rem;
+            .block1AuPbreak{
+               display: block;
+            }
+         }
+      } 
       .block2Au{
          flex-flow: row nowrap;
          justify-content: center;
-         margin: 1rem 4rem;
+         margin: 0rem;
+         padding:  1rem 10rem;
          p{
             text-align: left;
-            margin-left: 4rem;
-            font-size: 1.1rem;
-            letter-spacing: 0.1rem;
+            font-size: 1.25rem;
+            padding-right: 3rem;
          }
          video{
             width: 40%;
-            height: 30;
-            margin-right: 3rem;
-            margin-bottom: 2rem;
          }
       }
    }
    .section2{
       .subAboutUs{
-         @include tituloVs768 
-      }
-      .block3Au{
-         display: flex;
-         flex-flow: row nowrap;
-         justify-content: center;
-         align-items: center;
-         margin: 0rem 2rem;
-         padding-bottom: 2rem;
-         .img1{
-            max-width: 40%;
-         }
-         p{
-            text-align: center;
-            font-size: 1.1rem;
-            padding-left: 1.1rem;
-            padding-right: 1.1rem;
-         }
-         .img2{
-            width: 325px;
+         padding: 1rem 2rem;
+         text-align: left;
+         background-color: rgb(254, 246, 246);
+         h2{
+            font-size: 2rem;
+            font-weight: bold;
+            color: #353d45;
          }
       }
    }
 
-   //terminar complemoento bootstrap!!!
-   .card-group{
-   display: flex;
-   flex-flow: row wrap;
-   justify-content: center;
-   margin-bottom: 2rem;
-   .card{
-      margin: 1rem;
-   }
-   
-   }
+
 }
 /*----Cierre-Aboutus----*/
-//--version laptop 
+//--version Desktop
 
 /*-------------------------------------*/
 
@@ -744,7 +731,6 @@ footer{
 .contMainFtg{
 @include estiloFondo1;
 font-family: 'Roboto', sans-serif;
-   
 }
 //titulo Ftg
 main{

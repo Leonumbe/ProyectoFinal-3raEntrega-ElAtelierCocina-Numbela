@@ -392,26 +392,26 @@ footer {
 /*---cierre-About Us---*/
 @media only screen and (min-width: 480px) {
   /*-----Prop AboutUs------*/
-  main .tituloAu {
+  .fondoAu1 main .tituloAu {
     padding: 1rem  2rem;
     text-align: left;
     background-color: #fef6f6; }
-    main .tituloAu h1 {
+    .fondoAu1 main .tituloAu h1 {
       font-size: 2.5rem;
       font-weight: bold;
       color: #353d45; }
-  .section1 .block1Au {
+  .fondoAu1 .section1 .block1Au {
     display: flex;
     flex-flow: row nowrap;
     justify-content: center;
     align-items: center;
     background-color: #353d45; }
-    .section1 .block1Au img {
+    .fondoAu1 .section1 .block1Au img {
       margin: 0;
       padding-left: 0.5rem;
       padding-top: 0.5rem;
       max-width: 30%; }
-    .section1 .block1Au p {
+    .fondoAu1 .section1 .block1Au p {
       padding: 1rem;
       text-align: justify;
       font-family: 'Roboto', sans-serif;
@@ -419,15 +419,15 @@ footer {
       color: #dede11;
       background-color: #353d45;
       margin-bottom: 0; }
-      .section1 .block1Au p .block1AuPbreak {
+      .fondoAu1 .section1 .block1Au p .block1AuPbreak {
         display: none; }
-  .section1 .block2Au {
+  .fondoAu1 .section1 .block2Au {
     display: flex;
     flex-flow: row nowrap;
     justify-content: center;
     align-items: center;
     background-color: #353d45; }
-    .section1 .block2Au p {
+    .fondoAu1 .section1 .block2Au p {
       padding: 1rem;
       text-align: justify;
       font-family: 'Roboto', sans-serif;
@@ -436,45 +436,43 @@ footer {
       background-color: #353d45;
       margin-bottom: 0;
       text-align: justify; }
-    .section1 .block2Au video {
+    .fondoAu1 .section1 .block2Au video {
       max-width: 40%;
       padding-right: 0.5rem;
-      padding-bottom: 0.5rem; } }
+      padding-bottom: 0.5rem; }
+  .section2 .subAboutUs {
+    padding: 0.75rem;
+    text-align: center;
+    background-color: #fef6f6; }
+    .section2 .subAboutUs h2 {
+      font-size: 1.5rem;
+      font-weight: bold;
+      color: #353d45; }
+  .section2 .card-group {
+    margin: 1rem; }
+    .section2 .card-group .card {
+      margin: 0;
+      text-align: center; }
+      .section2 .card-group .card .card-body-1, .section2 .card-group .card .card-body-3 {
+        background-color: #f0a83c; }
+        .section2 .card-group .card .card-body-1 .card-title, .section2 .card-group .card .card-body-3 .card-title {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          color: white;
+          height: 7vh; }
+      .section2 .card-group .card .card-body-2 {
+        background-color: #459a45; }
+        .section2 .card-group .card .card-body-2 .card-text {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          text-align: justify;
+          padding: 1rem;
+          color: white;
+          height: 10rem; } }
 
-.section2 .subAboutUs {
-  padding: 0.75rem;
-  text-align: center;
-  background-color: #fef6f6; }
-  .section2 .subAboutUs h2 {
-    font-size: 1.5rem;
-    font-weight: bold;
-    color: #353d45; }
-
-.section2 .card-group {
-  margin: 1rem; }
-  .section2 .card-group .card {
-    margin: 0;
-    text-align: center; }
-    .section2 .card-group .card .card-body-1, .section2 .card-group .card .card-body-3 {
-      background-color: #f0a83c; }
-      .section2 .card-group .card .card-body-1 .card-title, .section2 .card-group .card .card-body-3 .card-title {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        color: white;
-        height: 7vh; }
-    .section2 .card-group .card .card-body-2 {
-      background-color: #459a45; }
-      .section2 .card-group .card .card-body-2 .card-text {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        text-align: justify;
-        padding: 1rem;
-        color: white;
-        height: 10rem; }
-
-@media (min-width: 576px) {
+@media only screen and (min-width: 576px) {
   .card-group .card {
     margin: 0; }
     .card-group .card .card-body-1, .card-group .card .card-body-3 {
@@ -494,66 +492,51 @@ footer {
         padding: 0;
         color: white; } }
 
-@media (min-width: 768px) {
-  .card-group .card .card-body-2 .card-text {
-    font-size: 1rem; } }
+@media only screen and (min-width: 768px) {
+  section1 .block1Au p .block1AuPbreak {
+    display: block; }
+  .card-group .card .card-body-2 {
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+    .card-group .card .card-body-2 .card-text {
+      font-size: 1rem; } }
 
 @media only screen and (min-width: 1024px) {
   /*--Prop Main-AboutUs--*/
-  main .tituloAu {
-    font-size: 1.5rem;
-    padding: 2rem 5.5rem 1rem; }
   .section1 .block1Au {
     flex-flow: row nowrap;
     justify-content: center;
-    margin: 1rem 4rem; }
+    margin: 0rem;
+    padding: 1rem 10rem; }
     .section1 .block1Au img {
-      width: 35%;
-      margin-left: 7rem; }
+      padding-bottom: 0.5rem;
+      width: 35%; }
     .section1 .block1Au p {
       text-align: justify;
-      font-size: 1.1rem;
-      letter-spacing: 0.1rem; }
+      font-size: 1.25rem;
+      padding-left: 3rem; }
+      .section1 .block1Au p .block1AuPbreak {
+        display: block; }
   .section1 .block2Au {
     flex-flow: row nowrap;
     justify-content: center;
-    margin: 1rem 4rem; }
+    margin: 0rem;
+    padding: 1rem 10rem; }
     .section1 .block2Au p {
       text-align: left;
-      margin-left: 4rem;
-      font-size: 1.1rem;
-      letter-spacing: 0.1rem; }
+      font-size: 1.25rem;
+      padding-right: 3rem; }
     .section1 .block2Au video {
-      width: 40%;
-      height: 30;
-      margin-right: 3rem;
-      margin-bottom: 2rem; }
+      width: 40%; }
   .section2 .subAboutUs {
-    font-size: 1.5rem;
-    padding: 2rem 5.5rem 1rem; }
-  .section2 .block3Au {
-    display: flex;
-    flex-flow: row nowrap;
-    justify-content: center;
-    align-items: center;
-    margin: 0rem 2rem;
-    padding-bottom: 2rem; }
-    .section2 .block3Au .img1 {
-      max-width: 40%; }
-    .section2 .block3Au p {
-      text-align: center;
-      font-size: 1.1rem;
-      padding-left: 1.1rem;
-      padding-right: 1.1rem; }
-    .section2 .block3Au .img2 {
-      width: 325px; }
-  .card-group {
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: center;
-    margin-bottom: 2rem; }
-    .card-group .card {
-      margin: 1rem; } }
+    padding: 1rem 2rem;
+    text-align: left;
+    background-color: #fef6f6; }
+    .section2 .subAboutUs h2 {
+      font-size: 2rem;
+      font-weight: bold;
+      color: #353d45; } }
 
 /*----Cierre-Aboutus----*/
 /*-------------------------------------*/
