@@ -375,8 +375,10 @@ footer{
    }
    /*----Cierre-Footer----*/
    //--version desktop
+
    /*-----------------------------*/
    /*----Prop Main-Index----*/
+
    //--version desktop
    .fondoIndex{
       @include estiloFondo1;
@@ -423,6 +425,7 @@ footer{
 
 //contenedor Main-AboutUs
 .fondoAu1{
+   background-color: rgb(254, 246, 246);
    main{
       .tituloAu{
          padding: 1rem  2rem;
@@ -489,8 +492,8 @@ footer{
             .card-text{
                display: flex;
                justify-content: center;
-               align-items: center;
                text-align: justify;
+               align-items: center;
                padding: 1rem ;
                color: white;
                height: 10rem;
@@ -570,19 +573,14 @@ footer{
    .section2{
       .subAboutUs{
          padding: 0.75rem;
-         text-align: center;
-         background-color: rgb(254, 246, 246);
          h2{
             font-size: 1.5rem;
-            font-weight: bold;
             color: #353d45;
          }
       }
       .card-group{
-         margin: 1rem;
          .card{
             margin: 0;
-            text-align: center;
             .card-body-1, .card-body-3{
                background-color: rgb(240, 168, 60);
                .card-title{
@@ -594,15 +592,47 @@ footer{
                }
             }
             .card-body-2{
-               background-color: rgb(69, 154, 69);
                .card-text{
-                  display: flex;
-                  justify-content: center;
-                  align-items: center;
-                  text-align: justify;
-                  padding: 1rem ;
+                  padding: 1rem;
                   color: white;
-                  height: 10rem;
+               }
+            }
+         }
+      }
+   }
+   .section3{
+      .editWs{
+         .wsAnime{
+         bottom: 7rem;
+         width: 100px;
+         }
+      }
+   }
+}
+
+@media only screen and (min-width: 576px){
+   .contMainAu{
+      .section2{
+         .subAboutUs{
+            text-align: left;
+            padding-left: 2rem ;
+         }
+         .card-group{
+         margin: 0rem;
+            .card{
+               margin: 0;
+               .card-body-1, .card-body-3{
+                  height: 100%;
+               }
+               .card-body-2{
+                  height: 100%;
+                  background-color: rgb(69, 154, 69);
+                  .card-text{
+                     text-align: center;
+                     font-size: 0.75rem;
+                     padding: 0;
+                     color: white;
+                  }
                }
             }
          }
@@ -610,112 +640,90 @@ footer{
    }
 }
 
-@media only screen and (min-width: 576px){
-   .card-group{
-      //margin: 1rem;
-      .card{
-         margin: 0;
-         .card-body-1, .card-body-3{
-            height: 100%;
-            .card-title{
-               display: flex;
-               justify-content: center;
-               align-items: center;
-               color: white;
-               height: 10vh;
-            }
-         }
-         .card-body-2{
-            height: 100%;
-            background-color: rgb(69, 154, 69);
-            .card-text{
-               text-align: center;
-               font-size: 0.75rem;
-               padding: 0;
-               color: white;
+@media only screen and (min-width: 768px){
+  .contMainAu{
+      .section2{
+         .card-group{
+            .card{
+               .card-body-2{
+                  display: flex;
+                  justify-content: center;
+                  align-items: center;
+                  .card-text{
+                     font-size: 1.15rem !important;
+                     padding: 0.15rem;
+                  }
+               }
             }
          }
       }
    }
 }
-
-@media only screen and (min-width: 768px){
-   section1{
-      .block1Au{
-         p{
-            .block1AuPbreak{
-               display: block;
-            }
-         }
-      }
-   }
-   .card-group{
-      .card{
-         .card-body-2{
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            .card-text{
-               font-size: 1rem;
-            }
-         }
-      }
-   }
-}      
+ /*--cierre Main-AboutUs--*/
+   //version tablet
 
 @media only screen and (min-width:1024px){
      
    /*--Prop Main-AboutUs--*/
    //version desktop
-   .section1{
-      .block1Au{
-         flex-flow: row nowrap;
-         justify-content: center;
-         margin: 0rem;
-         padding: 1rem 10rem;
-         img{
-            padding-bottom: 0.5rem;
-            width: 35%;
-         }
-         p{
-            text-align: justify;
-            font-size: 1.25rem;
-            padding-left: 3rem;
-            .block1AuPbreak{
-               display: block;
+   .contMainAu{
+      .fondoAu1{
+         main{
+            .tituloAu{
+               h1{
+                  margin: 0;
+               }
             }
          }
-      } 
-      .block2Au{
-         flex-flow: row nowrap;
-         justify-content: center;
-         margin: 0rem;
-         padding:  1rem 10rem;
-         p{
-            text-align: left;
-            font-size: 1.25rem;
-            padding-right: 3rem;
-         }
-         video{
-            width: 40%;
+         .section1{
+            .block1Au{
+               margin: 0rem;
+               padding: 1rem 5rem;
+               img{
+                  padding-bottom: 0.5rem;
+                  width: 50%;
+               }
+               p{
+                  font-size: 1.20rem;
+                  padding-left: 3rem;
+                  .block1AuPbreak{
+                     display: block;
+                  }
+               }
+            } 
+            .block2Au{
+               margin: 0rem;
+               padding:  1rem 5rem;
+               p{
+                  text-align: justify;
+                  font-size: 1.25rem;
+                  padding-right: 3rem;
+               }
+               video{
+                  width: 40%;
+               }
+            }
          }
       }
    }
    .section2{
       .subAboutUs{
          padding: 1rem 2rem;
-         text-align: left;
-         background-color: rgb(254, 246, 246);
          h2{
             font-size: 2rem;
-            font-weight: bold;
-            color: #353d45;
+            margin-bottom: 0;
          }
       }
    }
-
-
+   .section3{
+      .editWs{
+         .wsAnime{
+         width: 150px;
+         }
+      }
+   }
 }
+
 /*----Cierre-Aboutus----*/
 //--version Desktop
 
@@ -729,47 +737,48 @@ footer{
 
 /*contenedor cuerpo Main*/
 .contMainFtg{
-@include estiloFondo1;
-font-family: 'Roboto', sans-serif;
-}
-//titulo Ftg
-main{
-   .tituloFtg{
-      @extend %stileTB;
-      h1{
-      color:  rgb(247, 71, 71);
-      @extend %titulo1B;
-      }
-      h2{
-         display: none;
+   main{
+      .tituloFtg{
+         font-family: 'Roboto', sans-serif;
+         text-align: center;
+         background-color: $colorFondo6;
+         h1{
+         color:  rgb(247, 71, 71);
+         @extend %titulo1B;
+         margin: 0;
+         }
+         h2{
+            display: none;
+         }
       }
    }
-}
-/*Prop Cards*/
-.section1{
-   .contS1Prod{
-      display: flex;
-      flex-flow: row wrap;
-      justify-content:space-evenly;
-      .card{
-         margin: 2rem 5rem;
-         text-align: center;
-         padding: 0;
-         img{
-            border: 3.5px solid rgb(168, 164, 164);
-            }
-         .estiloCard{
-           background-image: linear-gradient(to right, whitesmoke, rgb(183, 174, 174));
-            }
-            .btn{
-               color:map-get($map: $btA, $key:color-btA);
-               border: none;
-               border-radius: map-get($map: $btA, $key:border-radius-btA);
-               font-weight: map-get($map: $btA, $key:font-weight-btA);
-               font-size: map-get($map: $btA, $key:font-size-btA);
-               background-color: map-get($map: $btA, $key:background-color-btA);
-               &:hover{transform: scale(1.1);
-               box-shadow: 3px 3px #1C2833;
+   /*Prop Cards*/
+   .section1{
+      .contS1Prod{
+         @include estiloFondo1;
+         display: flex;
+         flex-flow: row wrap;
+         justify-content:space-evenly;
+         .card{
+            margin: 2rem 5rem;
+            text-align: center;
+            padding: 0;
+            img{
+               border: 3.5px solid rgb(168, 164, 164);
+               }
+            .estiloCard{
+            background-image: linear-gradient(to right, whitesmoke, rgb(183, 174, 174));
+               }
+               .btn{
+                  color:map-get($map: $btA, $key:color-btA);
+                  border: none;
+                  border-radius: map-get($map: $btA, $key:border-radius-btA);
+                  font-weight: map-get($map: $btA, $key:font-weight-btA);
+                  font-size: map-get($map: $btA, $key:font-size-btA);
+                  background-color: map-get($map: $btA, $key:background-color-btA);
+                  &:hover{transform: scale(1.1);
+                  box-shadow: 3px 3px #1C2833;
+               }
             }
          }
       }
@@ -777,11 +786,15 @@ main{
 }
 /*----cierre-FoodtoGo----*/
 //--version Mobile
-  
-@media only screen and (min-width: 768px){
+@media only screen and (min-width: 480px){
  
    /*--Prop Main-FoodtoGo--*/
-   //--version Laptop  
+   //--version Laptop 
+  
+@media only screen and (min-width: 1024px){
+ 
+   /*--Prop Main-FoodtoGo--*/
+   //--version desktop  
       main{
          .tituloFtg{
             margin-left: 2rem;
@@ -800,9 +813,10 @@ main{
             }
          }
       }
-   /*----Cierre-FoodtoGo----*/
-   //--version laptop 
+   }
 }
+/*----Cierre-FoodtoGo----*/
+//--version desktop 
 
 /*-----------------------------------------/
 

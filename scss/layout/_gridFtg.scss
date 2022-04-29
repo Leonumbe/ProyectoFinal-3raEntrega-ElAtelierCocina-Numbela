@@ -14,10 +14,10 @@ grid-template-areas:"header header header header"
 /*Prop-Hijos*/
 header{
 grid-area: header;
-background-color: #A3E4D7;
+background-color:$colorFondoHeader;
 position: sticky;
 top: 0;
-z-index: 1;
+z-index: 3;
 }      
 .contMainFtg{
 grid-area: main;
@@ -34,5 +34,5 @@ grid-area: section3;
 footer{
 grid-area: footer;
 font-family: 'Roboto', sans-serif;
-background-color: rgba(112, 105, 105, 0.692);
+background-color: $colorFondoFooter;
 }

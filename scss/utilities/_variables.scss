@@ -1,9 +1,12 @@
 //variables
 $colorFondoHeader: #A3E4D7; 
 $colorFondoFooter: rgba(112, 105, 105, 0.692);
-$colorFondo1: rgb(241, 208, 208);
-$colorFondo2: rgb(247, 71, 71);
-$colorFondo3: rgb(83, 157, 222);
+$colorFondo1:rgb(241, 208, 208);
+$colorFondo2:rgb(247, 71, 71);
+$colorFondo3:rgb(83, 157, 222);
+$colorFondo4:rgb(240, 168, 60);
+$colorFondo5:rgb(69, 154, 69);
+$colorFondo6:rgb(254, 246, 246);
 
 //Fuentes
 $tipoFuente: 'Roboto', sans-serif;
@@ -21,7 +24,8 @@ $colorFuente:
          whitesmoke,
            rgb(241, 208, 208),
              rgb(83, 157, 222),
-               #c62820;
+               #c62820,
                //break 10
+                  #353d45;
 
              
