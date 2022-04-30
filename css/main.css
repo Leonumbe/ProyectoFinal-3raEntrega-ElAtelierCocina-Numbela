@@ -239,7 +239,7 @@ footer {
         header .headerMenu nav ul li a {
           justify-content: end;
           align-items: center;
-          font-size: 1.1rem;
+          font-size: 1.25rem;
           font-weight: bold; }
   /*----Cierre-header----*/
   /*----Prop Footer----*/
@@ -247,7 +247,7 @@ footer {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    height: 15vh; }
+    height: 12vh; }
     footer .footerImgC {
       margin-left: 4rem;
       padding: 1rem; }
@@ -558,7 +558,7 @@ footer {
     background-color: #ffeca9;
     margin: 0.1rem 0rem; }
     .contMainFtg main .tituloFtg h1 {
-      color: white;
+      color: #353d45;
       margin: 0; }
     .contMainFtg main .tituloFtg h2 {
       display: none; }
@@ -602,7 +602,7 @@ footer {
       font-size: 2.5rem;
       font-weight: bold;
       margin-bottom: 0;
-      color: white; }
+      color: #353d45; }
   .contMainFtg .section1 .contS1Prod .card {
     max-width: 13rem;
     margin: 1.75rem 2rem; }
@@ -830,9 +830,16 @@ footer {
       text-align: left;
       font-size: 2.5rem;
       padding: 0rem; }
+    .contMainCu .contMainCu2 main .contSectionCu .contSectionCu1 h3, .contMainCu .contMainCu2 main .contSectionCu .contSectionCu2 h3, .contMainCu .contMainCu2 main .contSectionCu .contSectionCu3 h3 {
+      font-size: 1rem; }
+    .contMainCu .contMainCu2 main .contSectionCu .contSectionCu1 img, .contMainCu .contMainCu2 main .contSectionCu .contSectionCu2 img, .contMainCu .contMainCu2 main .contSectionCu .contSectionCu3 img {
+      width: 15%;
+      margin-left: 2.5rem;
+      padding: 0.75rem; }
     .contMainCu .contMainCu2 main .contSectionCu .mapaCu {
       margin: 1rem; }
       .contMainCu .contMainCu2 main .contSectionCu .mapaCu .editMap {
+        height: 250px;
         border: 3px solid whitesmoke; }
     .contMainCu .contMainCu2 .section1 .subTituloCu {
       padding: 1rem 0.5rem; }
@@ -850,7 +857,7 @@ footer {
         margin: 0rem;
         padding: 0rem; }
         .contMainCu .contMainCu2 .section1 .contFormCu .formCu .stileForm {
-          font-size: 1.25rem;
+          font-size: 1.15rem;
           font-weight: 500;
           margin: 0.5rem 1rem;
           padding: 0rem; }
@@ -858,7 +865,7 @@ footer {
             padding: 0.3rem 0rem; }
         .contMainCu .contMainCu2 .section1 .contFormCu .formCu .bottonForm {
           text-align: right;
-          margin: 0.75rem 1rem; }
+          padding: 0.75rem 1rem; }
   .contMainCu .section2 .backHomeCu {
     margin: 1rem; }
     .contMainCu .section2 .backHomeCu img {
@@ -868,25 +875,31 @@ footer {
 
 @media only screen and (min-width: 1024px) {
   /*----Prop Main-Contact Us---*/
-  .contMainCu .contMainCu2 main .tituloCu h1 {
-    font-size: 3rem; }
-  .contMainCu .contMainCu2 .section1 .subTituloCu {
-    padding: 1rem 1rem; }
-    .contMainCu .contMainCu2 .section1 .subTituloCu h2 {
+  .contMainCu .contMainCu2 main {
+    border: 2px solid whitesmoke; }
+    .contMainCu .contMainCu2 main .tituloCu h1 {
       font-size: 3rem; }
+  .contMainCu .contMainCu2 .section1 {
+    border: 2px solid whitesmoke; }
+    .contMainCu .contMainCu2 .section1 .subTituloCu {
+      padding: 1rem 1rem; }
+      .contMainCu .contMainCu2 .section1 .subTituloCu h2 {
+        font-size: 3rem; }
   .contMainCu .contMainCu2 .contFormCu {
     margin: 1rem 0.5rem; }
     .contMainCu .contMainCu2 .contFormCu .formCu {
       margin: 0rem; }
       .contMainCu .contMainCu2 .contFormCu .formCu .stileForm {
         font-size: 1.25rem;
-        margin: 0.5rem 7rem;
+        margin: 0rem 7rem;
         padding: 1rem 7rem; }
+        .contMainCu .contMainCu2 .contFormCu .formCu .stileForm .form-label {
+          margin-top: 1rem; }
         .contMainCu .contMainCu2 .contFormCu .formCu .stileForm .form-control {
-          margin: 0.3rem 5rem 0.3rem 0rem; }
+          margin: 0rem 5rem 0rem 0rem; }
       .contMainCu .contMainCu2 .contFormCu .formCu .bottonForm {
         text-align: right;
-        margin: 1.5rem 1rem 3rem 0rem;
+        margin: 1rem 1rem 1rem 0rem;
         padding-bottom: 2rem; }
   .section2 .backHomeCu {
     margin: 2rem; }
