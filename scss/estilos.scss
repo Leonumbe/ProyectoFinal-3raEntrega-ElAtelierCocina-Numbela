@@ -1000,157 +1000,232 @@ footer{
 @import "layout/gridCu";
 
 .contMainCu{
-   @include estiloFondo2;
    font-family:'Roboto', sans-serif;
-}
-main{
-   .tituloCu{
-      h1{
-         padding: 1.5rem 1rem 1.5rem 3rem;
-         text-align: center;
-         font-size: 2rem;
-         font-weight: bold;
-         color: #1C2833;
-      } 
-   }
-}
-.contSectionCu{
-   .contSectionCu1, .contSectionCu2, .contSectionCu3{
-      @extend %stileBlock;
-      justify-content: left;
-      h3{
-         font-size: 1rem;
-         font-weight: 700;
-      }
-      img{
-         width: 15%;
-         margin-left: 2.5rem;
-         padding: 0.75rem;
-      }
-   }
-   .mapaCu{
-      margin: 0.5rem 0rem;
-      text-align: center;
-   }      
-}
-//Prop subtitulo
-.section1{
-   .subTituloCu{
-      h2{
-      padding: 1rem 1rem;
-      text-align: center;
-      font-size: 2rem;
-      font-weight: bold;
-      color: #1C2833;
-      }
-   }
-}
-//agregar complemento boostrap
-.contFormCu{
-   text-align: left;
-   .stileForm{
-      font-size: 1.25rem;
-      font-weight: 500;
-      padding: 0.5rem 3rem;
-   }
-   .bottonForm{
-      text-align: right;
-      margin: 0.5rem 4rem;
-      .btnStile{
-         background-color: map-get($map:$btB, $key:background-color-btB);
-         color:map-get($map: $btB, $key:color-btB);
-         font-weight: map-get($map: $btB, $key:font-weight-btB);
-         border-radius: map-get($map: $btB, $key:border-radius-btB);
-         font-size: map-get($map: $btB, $key:font-size-btB );
-         padding:0.4rem 1.1rem;
-         border: none;
-         margin-right: 2.9rem;
-      }
-   }
-}
-//Animacion Botton-back    
-.section2{
-   .backHomeCu{
-      text-align: center;
-      padding: 1rem;
-      img{
-         width: 15%;
-         transition: 2s;
-         &:hover{ transform: scale(1.2);
+   .contMainCu2{
+      main{
+         .tituloCu{
+            padding: 1rem  2rem;
+            text-align: center;
+            h1{
+               margin-bottom: 0;
+               font-size: 2rem;
+               font-weight: bold;
+               color:nth($colorFuente,12);
+            }
+         }
+         .contSectionCu{
+            .contSectionCu1, .contSectionCu2, .contSectionCu3{
+               @extend %stileBlock;
+               justify-content: left;
+               h3{
+                  font-size: 0.80rem;
+                  font-weight: 700;
+
+               }
+               img{
+                  width: 15%;
+                  margin-left: 2.5rem;
+                  padding: 0.75rem;
+               }
+            }
+            .mapaCu{
+               border:3px solid $colorMarcoImg;
+               .editMap{
+                  width: 100%;
+               }
+            }      
          }
       }
-      p{
-         font-size: 0.75rem;
-         font-weight: bold;
-         color: nth($colorFuente, 9);
-      }
-   }
-
-}    
-/*---cierre Main-Contact Us-----*/
-//--version Mobile 
-
-@media only screen and (min-width: 768px){
-
-   /*----Prop Main-Contact Us---*/
-   //--Version Laptop
-   .contMainCu{
-      .contMainCu2{
-      display: flex;
-      justify-content:space-evenly;
-      }
-   }
-   main{
-      .tituloCu{
-         h1{
-            margin-top: 2.5rem;
-            margin-bottom: 1rem;
+      //Prop subtitulo
+      .section1{
+         .subTituloCu{
+            padding: 1rem  2rem;
+            text-align: center;
+            h2{
+               margin-bottom: 0;
+               font-size: 2rem;
+               font-weight: bold;
+               color:nth($colorFuente,12);
+            }
+         }
+         //complemento boostrap
+         .contFormCu{
+            background-color:$colorFondo8;
             text-align: left;
-            font-size: 2.5rem;
-            padding: 0rem;
+            padding: 1rem 0rem;
+            .stileForm{
+               font-size: 1rem;
+               font-weight: 700;
+               padding: 0.5rem 3rem;
+            }
+            .bottonForm{
+               text-align: center;
+               margin: 0.5rem;
+               .btnStile{
+                  background-color: map-get($map:$btB, $key:background-color-btB);
+                  color:map-get($map: $btB, $key:color-btB);
+                  font-weight: map-get($map: $btB, $key:font-weight-btB);
+                  border-radius: map-get($map: $btB, $key:border-radius-btB);
+                  font-size: map-get($map: $btB, $key:font-size-btB );
+                  padding:0.4rem 1.1rem;
+                  border: none;
+               }
+            }
          }
-      } 
-   }
-   .section1{
-      .subTituloCu{
-         h2{
-            margin-top: 2.5rem;
-            margin-bottom: 1rem;
-            padding: 0rem;
-            text-align: left;
-            font-size: 2.5rem;
-         }
-      } 
-   }
-
-   //complemento boostrap
-   .contFormCu{
-      text-align: left;
-      margin: 1rem 0rem;
-      .formCu{
-         margin: 0rem;
-         padding: 0rem;
-      
-         .stileForm{
-            font-size: 1.25rem;
-            font-weight: 500;
-            
-         }
-         .bottonForm{
-            text-align: right;
-            margin: 1.5rem 1rem;
-            
-         } 
       }
    }
    //Animacion Botton-back    
    .section2{
       .backHomeCu{
-       margin: 2rem;
+         text-align: center;
+         padding: 1rem;
          img{
-            width: 120px;
-           
+            width: 15%;
+            transition: 2s;
+            &:hover{ transform: scale(1.2);
+            }
          }
+         p{
+            font-size: 0.75rem;
+            font-weight: bold;
+            color: nth($colorFuente, 9);
+            margin: 0;
+         }
+      }
+   }
+}    
+/*---cierre Main-Contact Us-----*/
+//--version Mobile 
+
+@media only screen and (min-width: 576px){
+
+   /*----Prop Main-Contact Us---*/
+   //--Version Laptop
+   .contMainCu{
+      .contMainCu2{
+         display: flex;
+         justify-content:space-evenly;
+         main{
+            .tituloCu{
+               
+               h1{
+                  margin-top: 2.5rem;
+                  margin-bottom: 1rem;
+                  text-align: left;
+                  font-size: 2.5rem;
+                  padding: 0rem;
+               }
+            } 
+            .contSectionCu{
+               .mapaCu{
+                  margin: 1rem;
+                  .editMap{
+                     border:3px solid $colorMarcoImg;
+                  }
+               }  
+            }
+         }
+         .section1{
+            .subTituloCu{
+               padding: 1rem 0.5rem;
+               h2{
+                  margin-top: 2.5rem;
+                  margin-bottom: 1rem;
+                  padding: 0rem;
+                  text-align: left;
+                  font-size: 2.5rem;
+               }
+            } 
+            //complemento boostrap
+            .contFormCu{
+               text-align: left;
+               margin: 0rem 0.5rem;
+               padding: 0rem;
+               .formCu{
+                  margin: 0rem;
+                  padding: 0rem;
+                  .stileForm{
+                     font-size: 1.25rem;
+                     font-weight: 500;
+                     margin: 0.5rem 1rem;
+                     padding: 0rem;
+                     .form-control{
+                        padding: 0.3rem 0rem;
+                     }
+                  }
+                  .bottonForm{
+                     text-align: right;
+                     margin: 0.75rem 1rem;
+                  } 
+               }
+            }   
+         }
+      }
+      //Animacion Botton-back    
+      .section2{
+         .backHomeCu{
+         margin: 1rem;
+            img{
+               max-width: 80px;
+            }
+            p{
+               font-size: 1rem;
+            }
+         }
+      }  
+   }
+}
+
+@media only screen and (min-width: 1024px){
+
+   /*----Prop Main-Contact Us---*/
+   //--Version Laptop
+   .contMainCu{
+      .contMainCu2{
+         main{
+            .tituloCu{
+               h1{
+                  font-size: 3rem;
+               }
+            } 
+         }
+         .section1{
+            .subTituloCu{
+               padding: 1rem 1rem;
+               h2{
+                  font-size: 3rem;
+               }
+            } 
+         }
+         //complemento boostrap
+         .contFormCu{
+            margin: 1rem 0.5rem;
+            .formCu{
+               margin: 0rem;
+               .stileForm{
+                  font-size: 1.25rem;
+                  margin: 0.5rem 7rem;
+                  padding: 1rem 7rem;
+                  .form-control{
+                     margin: 0.3rem 5rem 0.3rem 0rem;
+                  }
+               }
+               .bottonForm{
+                  text-align: right;
+                  margin: 1.5rem 1rem 3rem 0rem;
+                  padding-bottom: 2rem;
+               } 
+            }
+         }
+      }
+   }   
+   //Animacion Botton-back    
+   .section2{
+      .backHomeCu{
+         margin: 2rem;
+            img{
+               max-width: 110px;
+            }
          p{
             font-size: 1rem;
            

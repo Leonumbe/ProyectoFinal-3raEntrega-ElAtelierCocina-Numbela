@@ -4,7 +4,7 @@
   padding: 0;
   box-sizing: border-box; }
 
-.fondoAu1 .section1 .block2Au, .contSectionCu .contSectionCu1, .contSectionCu .contSectionCu2, .contSectionCu .contSectionCu3 {
+.fondoAu1 .section1 .block2Au, .contMainCu .contMainCu2 main .contSectionCu .contSectionCu1, .contMainCu .contMainCu2 main .contSectionCu .contSectionCu2, .contMainCu .contMainCu2 main .contSectionCu .contSectionCu3 {
   display: flex;
   align-items: center; }
 
@@ -755,104 +755,143 @@ footer {
   background-color: whitesmoke; }
 
 .contMainCu {
-  background-image: url(../../img/madera.jpg);
-  background-size: cover;
   font-family: 'Roboto', sans-serif; }
-
-main .tituloCu h1 {
-  padding: 1.5rem 1rem 1.5rem 3rem;
-  text-align: center;
-  font-size: 2rem;
-  font-weight: bold;
-  color: #1C2833; }
-
-.contSectionCu .contSectionCu1, .contSectionCu .contSectionCu2, .contSectionCu .contSectionCu3 {
-  justify-content: left; }
-  .contSectionCu .contSectionCu1 h3, .contSectionCu .contSectionCu2 h3, .contSectionCu .contSectionCu3 h3 {
-    font-size: 1rem;
-    font-weight: 700; }
-  .contSectionCu .contSectionCu1 img, .contSectionCu .contSectionCu2 img, .contSectionCu .contSectionCu3 img {
-    width: 15%;
-    margin-left: 2.5rem;
-    padding: 0.75rem; }
-
-.contSectionCu .mapaCu {
-  margin: 0.5rem 0rem;
-  text-align: center; }
-
-.section1 .subTituloCu h2 {
-  padding: 1rem 1rem;
-  text-align: center;
-  font-size: 2rem;
-  font-weight: bold;
-  color: #1C2833; }
-
-.contFormCu {
-  text-align: left; }
-  .contFormCu .stileForm {
-    font-size: 1.25rem;
-    font-weight: 500;
-    padding: 0.5rem 3rem; }
-  .contFormCu .bottonForm {
-    text-align: right;
-    margin: 0.5rem 4rem; }
-    .contFormCu .bottonForm .btnStile {
-      background-color: #539dde;
-      color: #f1d0d0;
+  .contMainCu .contMainCu2 main .tituloCu {
+    padding: 1rem  2rem;
+    text-align: center; }
+    .contMainCu .contMainCu2 main .tituloCu h1 {
+      margin-bottom: 0;
+      font-size: 2rem;
       font-weight: bold;
-      border-radius: 1rem;
-      font-size: 1.15rem;
-      padding: 0.4rem 1.1rem;
-      border: none;
-      margin-right: 2.9rem; }
-
-.section2 .backHomeCu {
-  text-align: center;
-  padding: 1rem; }
-  .section2 .backHomeCu img {
-    width: 15%;
-    transition: 2s; }
-    .section2 .backHomeCu img:hover {
-      transform: scale(1.2); }
-  .section2 .backHomeCu p {
-    font-size: 0.75rem;
-    font-weight: bold;
-    color: #539dde; }
+      color: #f0a83c; }
+  .contMainCu .contMainCu2 main .contSectionCu .contSectionCu1, .contMainCu .contMainCu2 main .contSectionCu .contSectionCu2, .contMainCu .contMainCu2 main .contSectionCu .contSectionCu3 {
+    justify-content: left; }
+    .contMainCu .contMainCu2 main .contSectionCu .contSectionCu1 h3, .contMainCu .contMainCu2 main .contSectionCu .contSectionCu2 h3, .contMainCu .contMainCu2 main .contSectionCu .contSectionCu3 h3 {
+      font-size: 0.80rem;
+      font-weight: 700; }
+    .contMainCu .contMainCu2 main .contSectionCu .contSectionCu1 img, .contMainCu .contMainCu2 main .contSectionCu .contSectionCu2 img, .contMainCu .contMainCu2 main .contSectionCu .contSectionCu3 img {
+      width: 15%;
+      margin-left: 2.5rem;
+      padding: 0.75rem; }
+  .contMainCu .contMainCu2 main .contSectionCu .mapaCu {
+    border: 3px solid whitesmoke; }
+    .contMainCu .contMainCu2 main .contSectionCu .mapaCu .editMap {
+      width: 100%; }
+  .contMainCu .contMainCu2 .section1 .subTituloCu {
+    padding: 1rem  2rem;
+    text-align: center; }
+    .contMainCu .contMainCu2 .section1 .subTituloCu h2 {
+      margin-bottom: 0;
+      font-size: 2rem;
+      font-weight: bold;
+      color: #f0a83c; }
+  .contMainCu .contMainCu2 .section1 .contFormCu {
+    background-color: whitesmoke;
+    text-align: left;
+    padding: 1rem 0rem; }
+    .contMainCu .contMainCu2 .section1 .contFormCu .stileForm {
+      font-size: 1rem;
+      font-weight: 700;
+      padding: 0.5rem 3rem; }
+    .contMainCu .contMainCu2 .section1 .contFormCu .bottonForm {
+      text-align: center;
+      margin: 0.5rem; }
+      .contMainCu .contMainCu2 .section1 .contFormCu .bottonForm .btnStile {
+        background-color: #539dde;
+        color: #f0a83c;
+        font-weight: bold;
+        border-radius: 1rem;
+        font-size: 1.15rem;
+        padding: 0.4rem 1.1rem;
+        border: none; }
+  .contMainCu .section2 .backHomeCu {
+    text-align: center;
+    padding: 1rem; }
+    .contMainCu .section2 .backHomeCu img {
+      width: 15%;
+      transition: 2s; }
+      .contMainCu .section2 .backHomeCu img:hover {
+        transform: scale(1.2); }
+    .contMainCu .section2 .backHomeCu p {
+      font-size: 0.75rem;
+      font-weight: bold;
+      color: #539dde;
+      margin: 0; }
 
 /*---cierre Main-Contact Us-----*/
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 576px) {
   /*----Prop Main-Contact Us---*/
   .contMainCu .contMainCu2 {
     display: flex;
     justify-content: space-evenly; }
-  main .tituloCu h1 {
-    margin-top: 2.5rem;
-    margin-bottom: 1rem;
-    text-align: left;
-    font-size: 2.5rem;
-    padding: 0rem; }
-  .section1 .subTituloCu h2 {
-    margin-top: 2.5rem;
-    margin-bottom: 1rem;
-    padding: 0rem;
-    text-align: left;
-    font-size: 2.5rem; }
-  .contFormCu {
-    text-align: left;
-    margin: 1rem 0rem; }
-    .contFormCu .formCu {
-      margin: 0rem;
+    .contMainCu .contMainCu2 main .tituloCu h1 {
+      margin-top: 2.5rem;
+      margin-bottom: 1rem;
+      text-align: left;
+      font-size: 2.5rem;
       padding: 0rem; }
-      .contFormCu .formCu .stileForm {
+    .contMainCu .contMainCu2 main .contSectionCu .mapaCu {
+      margin: 1rem; }
+      .contMainCu .contMainCu2 main .contSectionCu .mapaCu .editMap {
+        border: 3px solid whitesmoke; }
+    .contMainCu .contMainCu2 .section1 .subTituloCu {
+      padding: 1rem 0.5rem; }
+      .contMainCu .contMainCu2 .section1 .subTituloCu h2 {
+        margin-top: 2.5rem;
+        margin-bottom: 1rem;
+        padding: 0rem;
+        text-align: left;
+        font-size: 2.5rem; }
+    .contMainCu .contMainCu2 .section1 .contFormCu {
+      text-align: left;
+      margin: 0rem 0.5rem;
+      padding: 0rem; }
+      .contMainCu .contMainCu2 .section1 .contFormCu .formCu {
+        margin: 0rem;
+        padding: 0rem; }
+        .contMainCu .contMainCu2 .section1 .contFormCu .formCu .stileForm {
+          font-size: 1.25rem;
+          font-weight: 500;
+          margin: 0.5rem 1rem;
+          padding: 0rem; }
+          .contMainCu .contMainCu2 .section1 .contFormCu .formCu .stileForm .form-control {
+            padding: 0.3rem 0rem; }
+        .contMainCu .contMainCu2 .section1 .contFormCu .formCu .bottonForm {
+          text-align: right;
+          margin: 0.75rem 1rem; }
+  .contMainCu .section2 .backHomeCu {
+    margin: 1rem; }
+    .contMainCu .section2 .backHomeCu img {
+      max-width: 80px; }
+    .contMainCu .section2 .backHomeCu p {
+      font-size: 1rem; } }
+
+@media only screen and (min-width: 1024px) {
+  /*----Prop Main-Contact Us---*/
+  .contMainCu .contMainCu2 main .tituloCu h1 {
+    font-size: 3rem; }
+  .contMainCu .contMainCu2 .section1 .subTituloCu {
+    padding: 1rem 1rem; }
+    .contMainCu .contMainCu2 .section1 .subTituloCu h2 {
+      font-size: 3rem; }
+  .contMainCu .contMainCu2 .contFormCu {
+    margin: 1rem 0.5rem; }
+    .contMainCu .contMainCu2 .contFormCu .formCu {
+      margin: 0rem; }
+      .contMainCu .contMainCu2 .contFormCu .formCu .stileForm {
         font-size: 1.25rem;
-        font-weight: 500; }
-      .contFormCu .formCu .bottonForm {
+        margin: 0.5rem 7rem;
+        padding: 1rem 7rem; }
+        .contMainCu .contMainCu2 .contFormCu .formCu .stileForm .form-control {
+          margin: 0.3rem 5rem 0.3rem 0rem; }
+      .contMainCu .contMainCu2 .contFormCu .formCu .bottonForm {
         text-align: right;
-        margin: 1.5rem 1rem; }
+        margin: 1.5rem 1rem 3rem 0rem;
+        padding-bottom: 2rem; }
   .section2 .backHomeCu {
     margin: 2rem; }
     .section2 .backHomeCu img {
-      width: 120px; }
+      max-width: 110px; }
     .section2 .backHomeCu p {
       font-size: 1rem; } }
 
