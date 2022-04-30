@@ -13,26 +13,26 @@ grid-template-areas:"header header header header"
 }
 /*Prop-Hijos*/
 header{
-grid-area: header;
-background-color:$colorFondoHeader;
-position: sticky;
-top: 0;
-z-index: 3;
+    grid-area: header;
+    background-color:$colorFondoHeader;
+    position: sticky;
+    top: 0;
+    z-index: 3;
 }      
 .contMainFtg{
-grid-area: main;
+    grid-area: main;
 }
 .section1{
-grid-area: section1;
+    grid-area: section1;
 }
 .section2{
-grid-area: section2;
+    grid-area: section2;
 }
 .section3{
-grid-area: section3;
+    grid-area: section3;
 }
 footer{
-grid-area: footer;
-font-family: 'Roboto', sans-serif;
-background-color: $colorFondoFooter;
+    grid-area: footer;
+    font-family: $tipoFuente;
+    background-color: $colorFondoFooter;
 }

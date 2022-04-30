@@ -37,31 +37,27 @@ header{
       list-style: none;
       text-align: center;
       padding-left: 0;
-      margin-top: 1rem;
-      margin-bottom: 0.75rem;
+      padding-bottom: 0,5rem;
+      margin: 0;
       //edicion de menu
       li{
          display: inline-block;
-         background-color: whitesmoke;
          margin: 0.1rem;
-         padding: 0px 3px;
-         border-radius: 0.5rem;
-            //animacion del menu
-            &:hover{
-               background-color:#77a3d8;
-               transform: scale(1.2);
-               transform: translate(0.1rem, 0.1rem);
-               box-shadow: 3px 3px rgb(51, 51, 51);
-               transition: 0.5s;
-            }
+         }
          //eliminacion de vineta
          a{
             font-size: 0.85rem;
             font-weight: bold;
-            color:nth($colorFuente, 1);
+            color:nth($colorFuente,13);
             text-decoration: none;
             &:hover{
-               color:nth($colorFuente, 7);
+               color:nth($colorFuente, 12);
+               border-radius: 0.5rem;
+               padding: 0px 3px;
+               transform: scale(1.2);
+               transform: translate(0.1rem, 0.1rem);
+               box-shadow: 3px 3px rgb(51, 51, 51);
+               transition: 0.5s;
             }
          }
       }
@@ -70,14 +66,14 @@ header{
    .headerChart{  
       display: none;
    }
-}
+
 /*----cierre-Header----*/
 //--version Mobile
 
 /*----Prop Footer----*/
 //--version Mobile
 footer{
-   margin-top: 0.5rem;
+   margin-top: 0.1rem;
    //Propiedades de "C"
    .footerImgC{
       padding-top: 0.2rem; 
@@ -91,7 +87,7 @@ footer{
    .footerText{
       h3{
          color: nth($colorFuente,3);
-         font-size: 1rem;
+         font-size: 0.85rem;
          font-weight: 600;
          text-align: center;
          margin-bottom: 0%;
@@ -118,6 +114,7 @@ footer{
    }
 }
 /*----Cierre-Footer----*/
+//--version Mobile
 
 /*----Prop-index----*/
 //--version Mobile
@@ -127,7 +124,7 @@ footer{
    .contGralCarrusel{
       .contCarrusel{
          img{
-            border: 0.5rem solid rgb(245, 245, 245);
+            border: 0.1rem solid rgb(245, 245, 245);
          }
       }
       .carousel-control-prev, .carousel-control-next{
@@ -141,12 +138,12 @@ footer{
 //section2-Prop. H1-H2-P
 .mainIndex{
    text-align: center;
-   background-color: $colorFondo1;
+   background-color: $colorFondo7;
    .editHead{
       font-size: 2.75rem;
       padding: 2rem 3rem 0rem;
       margin-bottom: 2rem;
-      color:nth($colorFuente,4);     
+      color:nth($colorFuente,11);     
    }
    .editSubt{
       font-size: 2rem;
@@ -195,10 +192,7 @@ footer{
       }
       /*Prop del Menu*/
       .headerMenu nav ul{
-            margin: 0.3rem 0rem ;
-            //edicion de menu
             li{
-               //animacion del menu
                a{
                   font-size: 1.05rem;
                }
@@ -231,7 +225,6 @@ footer{
       .footerText{
          display: flex;
          h3{
-         font-size: 0.85rem;
          text-align: center;
          }
       }
@@ -251,15 +244,12 @@ footer{
   //--version tablet
   /*Prop carrusel*/
    .section1{
-     // background-color:$colorFondo1 ;
-     
       .contGralCarrusel{
-        
          max-width: 60rem;
          margin: auto;
          .contCarrusel{
             img{
-               border: 0.5rem solid rgb(245, 245, 245);
+               border: 0.1rem solid rgb(245, 245, 245);
             }
          }
         
@@ -323,6 +313,7 @@ footer{
       .headerMenu{
          nav{
             ul{
+               padding-bottom: 0.25rem;
                li{
                   border-radius: 2rem;
                   padding: 0.1rem 0.5rem;
@@ -347,7 +338,6 @@ footer{
       justify-content: space-between;
       align-items: center;
       height: 15vh;
-      margin-top: 0;
       //Prop de "C"
       .footerImgC{
          margin-left: 4rem;
@@ -360,7 +350,7 @@ footer{
       .footerText{
          display: flex;
          h3{
-         font-size: 1.25rem;
+         font-size: 1.15rem;
          text-align: center;
          }
       }
@@ -377,14 +367,15 @@ footer{
    //--version desktop
 
    /*-----------------------------*/
-   /*----Prop Main-Index----*/
 
+   /*----Prop Main-Index----*/
    //--version desktop
+
    .fondoIndex{
       @include estiloFondo1;
       //carrusel
       .contGralCarrusel{
-         padding: 0.5rem;
+         padding: 0.1rem;
       }
    }
    //section2-index
@@ -414,6 +405,8 @@ footer{
       }
    }
 }
+/*----Cierre-Main-Index----*/
+//--version desktop
 
 /*----------------------------*/
 
@@ -425,7 +418,6 @@ footer{
 
 //contenedor Main-AboutUs
 .fondoAu1{
-   background-color: rgb(254, 246, 246);
    main{
       .tituloAu{
          padding: 1rem  2rem;
@@ -741,9 +733,10 @@ footer{
       .tituloFtg{
          font-family: 'Roboto', sans-serif;
          text-align: center;
-         background-color: $colorFondo6;
+         background-color: $colorFondo7;
+         margin: 0.1rem 0rem;
          h1{
-         color:  rgb(247, 71, 71);
+         color: nth($colorFuente,13);
          @extend %titulo1B;
          margin: 0;
          }
@@ -760,21 +753,22 @@ footer{
          flex-flow: row wrap;
          justify-content:space-evenly;
          .card{
-            margin: 2rem 5rem;
+            max-width: 11.5rem;
+            margin: 1.5rem 1.5rem;
             text-align: center;
             padding: 0;
             img{
-               border: 3.5px solid rgb(168, 164, 164);
+               border: 1.6px solid $colorMarcoImg;
                }
             .estiloCard{
-            background-image: linear-gradient(to right, whitesmoke, rgb(183, 174, 174));
+            background-image: linear-gradient(to right, white, $colorFondo7);
                }
                .btn{
                   color:map-get($map: $btA, $key:color-btA);
                   border: none;
                   border-radius: map-get($map: $btA, $key:border-radius-btA);
                   font-weight: map-get($map: $btA, $key:font-weight-btA);
-                  font-size: map-get($map: $btA, $key:font-size-btA);
+                  font-size: 1rem;
                   background-color: map-get($map: $btA, $key:background-color-btA);
                   &:hover{transform: scale(1.1);
                   box-shadow: 3px 3px #1C2833;
@@ -790,77 +784,170 @@ footer{
  
    /*--Prop Main-FoodtoGo--*/
    //--version Laptop 
-  
-@media only screen and (min-width: 1024px){
- 
-   /*--Prop Main-FoodtoGo--*/
-   //--version desktop  
+   .contMainFtg{
       main{
          .tituloFtg{
-            margin-left: 2rem;
-            h1{
+            padding-left: 4rem;
             text-align: left;
-            font-size: 8rem;
-            font-weight: bold;
+            h1{
+               font-size: 5rem;
             }
             h2{
-               display: inline-block;
-               text-align: left;
-               font-size: 2.5rem;
-               font-weight: bold;
-               color: rgb(247, 71, 71);
-               background-color: nth($colorFuente,6);
+            display: block;
+            text-align: left;
+            font-size: 2.5rem;
+            font-weight: bold;
+            margin-bottom: 0;
+            color: nth($colorFuente,13);
+            }
+         }
+      }
+      //Prop Cards
+      .section1{
+         .contS1Prod{
+            .card{
+               max-width: 13rem;
+               margin: 1.75rem 2rem;
+               .estiloCard{
+                  .btn{
+                     font-size: 1.25rem;
+                  }
+               }
             }
          }
       }
    }
 }
+/*--Cierre-FoodtoGo--*/
+//--version Laptop 
+  
+@media only screen and (min-width: 1024px){
+ 
+   /*--Prop Main-FoodtoGo--*/
+   //--version desktop
+   
+   .contMainFtg{
+      main{
+         .tituloFtg{
+            h1{
+            font-size: 7rem;
+            }
+            h2{
+               font-size: 2.5rem;
+            }
+         }
+      }
+      //Prop Cards
+      .section1{
+         .contS1Prod{
+            .card{
+               max-width: 15rem;
+               margin: 2rem 2rem;
+               .estiloCard{
+                  .btn{
+                     font-size: 1.3rem;
+                  }
+               }
+            }
+         }
+      }   
+   }
+}
+
 /*----Cierre-FoodtoGo----*/
 //--version desktop 
 
 /*-----------------------------------------/
 
 /*----Prop Main-Faqs----*/
-//--Version Mobile 480px
+//--Version Mobile
 
 //asociamos grid al html
 @import "layout/gridFaqs";
 
 .contMainFaqs{
    @include estiloFondo3;
-   font-family:'Roboto', sans-serif;
-   color: #1C2833;
-} 
-main{
-   .tituloFaqs{
-      @extend %stileTB;
-      h1{
-      color: whitesmoke;
-      @extend %titulo1B;
+   font-family:$tipoFuente;
+   //color: #1C2833;
+   main{
+      .tituloFaqs{
+         text-align: center;
+         h1{
+         color: nth($colorFuente,13);
+         @extend %titulo1B;
+         }
+      }
+   }
+   .section1{
+      .subFaqs{
+         display: none;
+      }
+   }
+   //complemento bootstrap Accordion
+   /*Prop Acordion*/
+   .section2{
+      .contS2Faq{
+         .accordion{
+            margin: 1rem 2rem;
+            .estilosAcordion{
+               margin: 1rem 2rem;
+               .estiloTextoAcord{
+                  background-color: white;
+                  font-weight: bold;
+                  padding: 1rem;
+                  font-size: 1rem;
+               }
+               .accordion-button:not(.collapsed){
+                     color: nth($colorFuente,12);
+                  p{
+                     font-size: 0.75rem;
+                  }
+               }
+               .accordion-button:focus{
+                  z-index: 1;
+               }
+            }
+         }
       }
    }
 }
-.section1{
-   .subFaqs{
-      display: none;
-   }
-}
-//complemento bootstrap Accordion
-/*Prop Acordion*/
-.section2{
-   .contS2Faq{
-      .accordion{
-         margin: 0.5rem 1rem 3rem 1rem;
-         .estilosAcordion{
-            background-color: rgba(214, 205, 205, 0.897);
-            margin: 1rem 4rem;
-            .estiloTextoAcord{
-               background-color:rgba(214, 205, 205, 0.897);
-               font-weight: bold;
-               padding: 1rem;
-               font-size: 1rem;
-               p{
-                  font-size: 0.75rem;
+
+/*----cierre Main-Faqs----*/
+//--version Mobile
+
+/*----Prop Main-Faqs----*/
+//--version tablet
+@media only screen and (min-width: 480px){
+   .contMainFaqs{
+      main{
+         .tituloFaqs{
+            padding-left: 4rem;
+            text-align: left;
+            h1{
+            font-size: 5rem;
+            }
+         }
+      }
+      .section1{     
+         .subFaqs {
+            display: inline-block;
+            margin-left: 4rem;
+            h2{
+            font-weight: bold;
+            margin-bottom: 1rem;
+            text-align: left;
+            font-size: 2rem;
+            color: nth($colorFuente, 13);
+            background-color:$colorFondo4;
+            }
+         }
+      }
+      .section2{
+         .contS2Faq{
+            .accordion{
+               margin: 1rem 3rem;
+               .estilosAcordion{
+               margin: 1.5rem 4rem;
                }
             }
          }
@@ -868,34 +955,35 @@ main{
    }
 }
 /*----cierre Main-Faqs----*/
-//--version Mobile
+//--version tablet
   
-@media only screen and (min-width: 768px){
+@media only screen and (min-width: 1024px){
   
    /*----Prop Main-Faqs----*/
-   //--version Laptop
-   main{
-      .tituloFaqs{
-         margin-left: 2rem;
-         h1{
-         text-align: left;
-         font-size: 8rem;
-         font-weight: bold;
-         color: whitesmoke;
+   //--version desktop
+   .contMainFaqs{
+      main{
+         .tituloFaqs{
+            h1{
+            font-size: 7rem;
+            }
          }
       }
-   }
-   .section1{     
-      .subFaqs {
-         display: inline-block;
-         margin-left: 4.75rem;
-         h2{
-         font-weight: bold;
-         margin-bottom: 1rem;
-         text-align: left;
-         font-size: 2.5rem;
-         color: whitesmoke;
-         background-color: rgb(83, 157, 222);
+      .section1{     
+         .subFaqs {
+            h2{
+            font-size: 2.5rem;
+            }
+         }
+      }
+      .section2{
+         .contS2Faq{
+            .accordion{
+               margin: 1rem 5rem;
+               .estilosAcordion{
+                  margin: 2rem 6rem;
+               }  
+            }
          }
       }
    }

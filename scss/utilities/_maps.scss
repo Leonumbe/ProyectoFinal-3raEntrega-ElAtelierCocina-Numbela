@@ -3,11 +3,11 @@
 //Mapa 2 tipos de botones
 //btA botones cards
 $btA:(
-    color-btA:nth($colorFuente,6),
+    color-btA:nth($colorFuente,7),
     border-radius-btA: 1rem,
     font-weight-btA: bold,
     font-size-btA: 1.5rem,
-    background-color-btA:$colorFondo2,
+    background-color-btA:$colorFondo4,
 );
 //btB boton Form
 $btB:(

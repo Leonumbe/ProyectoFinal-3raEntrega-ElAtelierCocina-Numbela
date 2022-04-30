@@ -8,13 +8,10 @@
   display: flex;
   align-items: center; }
 
-.contMainFtg main .tituloFtg h1, main .tituloFaqs h1 {
-  font-size: 5rem;
-  font-weight: 900; }
-
-main .tituloFaqs {
-  margin-left: 3rem;
-  padding: 1rem 0rem 0.5rem 2rem; }
+.contMainFtg main .tituloFtg h1, .contMainFaqs main .tituloFaqs h1 {
+  font-size: 3rem;
+  font-weight: bolder;
+  padding: 1rem 0rem; }
 
 /*grid index*/
 .contenedorPadreIndex {
@@ -42,7 +39,7 @@ header {
 footer {
   grid-area: footer;
   font-family: "Roboto", sans-serif;
-  background-color: rgba(112, 105, 105, 0.692); }
+  background-color: whitesmoke; }
 
 /*----Propiedades header----*/
 header {
@@ -59,34 +56,32 @@ header {
     list-style: none;
     text-align: center;
     padding-left: 0;
-    margin-top: 1rem;
-    margin-bottom: 0.75rem; }
+    padding-bottom: 0,5rem;
+    margin: 0; }
     header .headerMenu nav ul li {
       display: inline-block;
-      background-color: whitesmoke;
-      margin: 0.1rem;
-      padding: 0px 3px;
-      border-radius: 0.5rem; }
-      header .headerMenu nav ul li:hover {
-        background-color: #77a3d8;
+      margin: 0.1rem; }
+    header .headerMenu nav ul a {
+      font-size: 0.85rem;
+      font-weight: bold;
+      color: white;
+      text-decoration: none; }
+      header .headerMenu nav ul a:hover {
+        color: #f0a83c;
+        border-radius: 0.5rem;
+        padding: 0px 3px;
         transform: scale(1.2);
         transform: translate(0.1rem, 0.1rem);
         box-shadow: 3px 3px #333333;
         transition: 0.5s; }
-      header .headerMenu nav ul li a {
-        font-size: 0.85rem;
-        font-weight: bold;
-        color: #4545e0;
-        text-decoration: none; }
-        header .headerMenu nav ul li a:hover {
-          color: whitesmoke; }
-  header .headerChart {
-    display: none; }
+
+.headerChart {
+  display: none; }
 
 /*----cierre-Header----*/
 /*----Prop Footer----*/
 footer {
-  margin-top: 0.5rem; }
+  margin-top: 0.1rem; }
   footer .footerImgC {
     padding-top: 0.2rem;
     text-align: center; }
@@ -94,7 +89,7 @@ footer {
       width: 5%; }
   footer .footerText h3 {
     color: rgba(24, 23, 22, 0.904);
-    font-size: 1rem;
+    font-size: 0.85rem;
     font-weight: 600;
     text-align: center;
     margin-bottom: 0%; }
@@ -115,7 +110,7 @@ footer {
 /*----Prop-index----*/
 /*Prop carrusel*/
 .section1 .contGralCarrusel .contCarrusel img {
-  border: 0.5rem solid whitesmoke; }
+  border: 0.1rem solid whitesmoke; }
 
 .section1 .contGralCarrusel .carousel-control-prev, .section1 .contGralCarrusel .carousel-control-next {
   z-index: 0; }
@@ -124,12 +119,12 @@ footer {
 
 .mainIndex {
   text-align: center;
-  background-color: #f1d0d0; }
+  background-color: #ffeca9; }
   .mainIndex .editHead {
     font-size: 2.75rem;
     padding: 2rem 3rem 0rem;
     margin-bottom: 2rem;
-    color: #1C2833; }
+    color: #353d45; }
   .mainIndex .editSubt {
     font-size: 2rem;
     padding-bottom: 1.5rem;
@@ -167,10 +162,8 @@ footer {
     /*Prop del Menu*/ }
     header .headerLogo img {
       max-width: 150px; }
-    header .headerMenu nav ul {
-      margin: 0.3rem 0rem; }
-      header .headerMenu nav ul li a {
-        font-size: 1.05rem; }
+    header .headerMenu nav ul li a {
+      font-size: 1.05rem; }
     header .headerChart {
       display: none; }
   /*----cierre-Header----*/
@@ -188,7 +181,6 @@ footer {
     footer .footerText {
       display: flex; }
       footer .footerText h3 {
-        font-size: 0.85rem;
         text-align: center; }
     footer .footerRedes {
       margin: 0rem; }
@@ -201,7 +193,7 @@ footer {
     max-width: 60rem;
     margin: auto; }
     .section1 .contGralCarrusel .contCarrusel img {
-      border: 0.5rem solid whitesmoke; }
+      border: 0.1rem solid whitesmoke; }
   main .mainIndex .editHead {
     font-size: 3rem;
     padding: 1.5rem 1rem;
@@ -239,22 +231,23 @@ footer {
       text-align: center; }
       header .headerChart img {
         width: 50%; }
-    header .headerMenu nav ul li {
-      border-radius: 2rem;
-      padding: 0.1rem 0.5rem; }
-      header .headerMenu nav ul li a {
-        justify-content: end;
-        align-items: center;
-        font-size: 1.1rem;
-        font-weight: bold; }
+    header .headerMenu nav ul {
+      padding-bottom: 0.25rem; }
+      header .headerMenu nav ul li {
+        border-radius: 2rem;
+        padding: 0.1rem 0.5rem; }
+        header .headerMenu nav ul li a {
+          justify-content: end;
+          align-items: center;
+          font-size: 1.1rem;
+          font-weight: bold; }
   /*----Cierre-header----*/
   /*----Prop Footer----*/
   footer {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    height: 15vh;
-    margin-top: 0; }
+    height: 15vh; }
     footer .footerImgC {
       margin-left: 4rem;
       padding: 1rem; }
@@ -263,7 +256,7 @@ footer {
     footer .footerText {
       display: flex; }
       footer .footerText h3 {
-        font-size: 1.25rem;
+        font-size: 1.15rem;
         text-align: center; }
     footer .footerRedes .sideF, footer .footerRedes .sideI {
       width: 25%;
@@ -275,7 +268,7 @@ footer {
     background-image: url(../../img/pared.jpg);
     background-size: cover; }
     .fondoIndex .contGralCarrusel {
-      padding: 0.5rem; }
+      padding: 0.1rem; }
   main .mainIndex .editHead {
     font-size: 5rem;
     padding-top: 2rem;
@@ -291,6 +284,7 @@ footer {
     bottom: 7rem;
     width: 150px; } }
 
+/*----Cierre-Main-Index----*/
 /*----------------------------*/
 /*Grid-About Us*/
 .contenedorPadreAu {
@@ -320,42 +314,43 @@ main {
 
 footer {
   grid-area: footer;
-  font-family: 'Roboto', sans-serif;
-  background-color: rgba(112, 105, 105, 0.692); }
+  font-family: "Roboto", sans-serif;
+  background-color: whitesmoke; }
 
-.fondoAu1 {
+.fondoAu1 main .tituloAu {
+  padding: 1rem  2rem;
+  text-align: center;
+  font-size: 1rem;
+  font-weight: bold;
+  color: #1C2833;
   background-color: #fef6f6; }
-  .fondoAu1 main .tituloAu {
-    padding: 1rem  2rem;
-    text-align: center;
-    font-size: 1rem;
-    font-weight: bold;
-    color: #1C2833;
-    background-color: #fef6f6; }
-  .fondoAu1 .section1 .block1Au img {
-    width: 100%; }
-  .fondoAu1 .section1 .block1Au p {
+
+.fondoAu1 .section1 .block1Au img {
+  width: 100%; }
+
+.fondoAu1 .section1 .block1Au p {
+  padding: 1rem;
+  text-align: justify;
+  font-family: 'Roboto', sans-serif;
+  font-size: 1rem;
+  color: whitesmoke;
+  background-color: #353d45;
+  margin-bottom: 0; }
+  .fondoAu1 .section1 .block1Au p .block1AuPbreak {
+    display: none; }
+
+.fondoAu1 .section1 .block2Au {
+  flex-flow: column-reverse wrap; }
+  .fondoAu1 .section1 .block2Au p {
     padding: 1rem;
     text-align: justify;
     font-family: 'Roboto', sans-serif;
     font-size: 1rem;
-    color: #dede11;
-    background-color: #353d45;
-    margin-bottom: 0; }
-    .fondoAu1 .section1 .block1Au p .block1AuPbreak {
-      display: none; }
-  .fondoAu1 .section1 .block2Au {
-    flex-flow: column-reverse wrap; }
-    .fondoAu1 .section1 .block2Au p {
-      padding: 1rem;
-      text-align: justify;
-      font-family: 'Roboto', sans-serif;
-      font-size: 1rem;
-      color: #dede11;
-      background-color: #353d45; }
-    .fondoAu1 .section1 .block2Au video {
-      width: 100%;
-      height: 70%; }
+    color: whitesmoke;
+    background-color: #353d45; }
+  .fondoAu1 .section1 .block2Au video {
+    width: 100%;
+    height: 70%; }
 
 .section2 .subAboutUs {
   padding: 0.75rem;
@@ -414,7 +409,7 @@ footer {
       text-align: justify;
       font-family: 'Roboto', sans-serif;
       font-size: 1rem;
-      color: #dede11;
+      color: whitesmoke;
       background-color: #353d45;
       margin-bottom: 0; }
       .fondoAu1 .section1 .block1Au p .block1AuPbreak {
@@ -430,7 +425,7 @@ footer {
       text-align: justify;
       font-family: 'Roboto', sans-serif;
       font-size: 1rem;
-      color: #dede11;
+      color: whitesmoke;
       background-color: #353d45;
       margin-bottom: 0;
       text-align: justify; }
@@ -550,8 +545,8 @@ header {
 
 footer {
   grid-area: footer;
-  font-family: 'Roboto', sans-serif;
-  background-color: rgba(112, 105, 105, 0.692); }
+  font-family: "Roboto", sans-serif;
+  background-color: whitesmoke; }
 
 /*----Prop Main-FoodtoGo----*/
 /*contenedor cuerpo Main*/
@@ -560,9 +555,10 @@ footer {
   .contMainFtg main .tituloFtg {
     font-family: 'Roboto', sans-serif;
     text-align: center;
-    background-color: #fef6f6; }
+    background-color: #ffeca9;
+    margin: 0.1rem 0rem; }
     .contMainFtg main .tituloFtg h1 {
-      color: #f74747;
+      color: white;
       margin: 0; }
     .contMainFtg main .tituloFtg h2 {
       display: none; }
@@ -573,43 +569,58 @@ footer {
     flex-flow: row wrap;
     justify-content: space-evenly; }
     .contMainFtg .section1 .contS1Prod .card {
-      margin: 2rem 5rem;
+      max-width: 11.5rem;
+      margin: 1.5rem 1.5rem;
       text-align: center;
       padding: 0; }
       .contMainFtg .section1 .contS1Prod .card img {
-        border: 3.5px solid #a8a4a4; }
+        border: 1.6px solid whitesmoke; }
       .contMainFtg .section1 .contS1Prod .card .estiloCard {
-        background-image: linear-gradient(to right, whitesmoke, #b7aeae); }
+        background-image: linear-gradient(to right, white, #ffeca9); }
       .contMainFtg .section1 .contS1Prod .card .btn {
-        color: #1c2833be;
+        color: whitesmoke;
         border: none;
         border-radius: 1rem;
         font-weight: bold;
-        font-size: 1.5rem;
-        background-color: #f74747; }
+        font-size: 1rem;
+        background-color: #f0a83c; }
         .contMainFtg .section1 .contS1Prod .card .btn:hover {
           transform: scale(1.1);
           box-shadow: 3px 3px #1C2833; }
 
 /*----cierre-FoodtoGo----*/
 @media only screen and (min-width: 480px) {
-  /*--Prop Main-FoodtoGo--*/ }
-
-@media only screen and (min-width: 480px) and (min-width: 1024px) {
   /*--Prop Main-FoodtoGo--*/
-  main .tituloFtg {
-    margin-left: 2rem; }
-    main .tituloFtg h1 {
-      text-align: left;
-      font-size: 8rem;
-      font-weight: bold; }
-    main .tituloFtg h2 {
-      display: inline-block;
+  .contMainFtg main .tituloFtg {
+    padding-left: 4rem;
+    text-align: left; }
+    .contMainFtg main .tituloFtg h1 {
+      font-size: 5rem; }
+    .contMainFtg main .tituloFtg h2 {
+      display: block;
       text-align: left;
       font-size: 2.5rem;
       font-weight: bold;
-      color: #f74747;
-      background-color: #1c2833be; } }
+      margin-bottom: 0;
+      color: white; }
+  .contMainFtg .section1 .contS1Prod .card {
+    max-width: 13rem;
+    margin: 1.75rem 2rem; }
+    .contMainFtg .section1 .contS1Prod .card .estiloCard .btn {
+      font-size: 1.25rem; } }
+
+/*--Cierre-FoodtoGo--*/
+@media only screen and (min-width: 1024px) {
+  /*--Prop Main-FoodtoGo--*/
+  .contMainFtg main .tituloFtg h1 {
+    font-size: 7rem; }
+  .contMainFtg main .tituloFtg h2 {
+    font-size: 2.5rem; }
+  .contMainFtg .section1 .contS1Prod .card {
+    max-width: 15rem;
+    margin: 2rem 2rem; }
+    .contMainFtg .section1 .contS1Prod .card .estiloCard .btn {
+      font-size: 1.3rem; } }
 
 /*----Cierre-FoodtoGo----*/
 /*-----------------------------------------/
@@ -643,55 +654,70 @@ header {
 
 footer {
   grid-area: footer;
-  font-family: 'Roboto', sans-serif;
-  background-color: rgba(112, 105, 105, 0.692); }
+  font-family: "Roboto", sans-serif;
+  background-color: whitesmoke; }
 
 .contMainFaqs {
   background-image: url(../img/fondofaqs.webp);
   background-size: cover;
-  font-family: 'Roboto', sans-serif;
-  color: #1C2833; }
-
-main .tituloFaqs h1 {
-  color: whitesmoke; }
-
-.section1 .subFaqs {
-  display: none; }
-
-/*Prop Acordion*/
-.section2 .contS2Faq .accordion {
-  margin: 0.5rem 1rem 3rem 1rem; }
-  .section2 .contS2Faq .accordion .estilosAcordion {
-    background-color: rgba(214, 205, 205, 0.897);
-    margin: 1rem 4rem; }
-    .section2 .contS2Faq .accordion .estilosAcordion .estiloTextoAcord {
-      background-color: rgba(214, 205, 205, 0.897);
-      font-weight: bold;
-      padding: 1rem;
-      font-size: 1rem; }
-      .section2 .contS2Faq .accordion .estilosAcordion .estiloTextoAcord p {
-        font-size: 0.75rem; }
+  font-family: "Roboto", sans-serif;
+  /*Prop Acordion*/ }
+  .contMainFaqs main .tituloFaqs {
+    text-align: center; }
+    .contMainFaqs main .tituloFaqs h1 {
+      color: white; }
+  .contMainFaqs .section1 .subFaqs {
+    display: none; }
+  .contMainFaqs .section2 .contS2Faq .accordion {
+    margin: 1rem 2rem; }
+    .contMainFaqs .section2 .contS2Faq .accordion .estilosAcordion {
+      margin: 1rem 2rem; }
+      .contMainFaqs .section2 .contS2Faq .accordion .estilosAcordion .estiloTextoAcord {
+        background-color: white;
+        font-weight: bold;
+        padding: 1rem;
+        font-size: 1rem; }
+      .contMainFaqs .section2 .contS2Faq .accordion .estilosAcordion .accordion-button:not(.collapsed) {
+        color: #f0a83c; }
+        .contMainFaqs .section2 .contS2Faq .accordion .estilosAcordion .accordion-button:not(.collapsed) p {
+          font-size: 0.75rem; }
+      .contMainFaqs .section2 .contS2Faq .accordion .estilosAcordion .accordion-button:focus {
+        z-index: 1; }
 
 /*----cierre Main-Faqs----*/
-@media only screen and (min-width: 768px) {
-  /*----Prop Main-Faqs----*/
-  main .tituloFaqs {
-    margin-left: 2rem; }
-    main .tituloFaqs h1 {
-      text-align: left;
-      font-size: 8rem;
-      font-weight: bold;
-      color: whitesmoke; }
-  .section1 .subFaqs {
+/*----Prop Main-Faqs----*/
+@media only screen and (min-width: 480px) {
+  .contMainFaqs main .tituloFaqs {
+    padding-left: 4rem;
+    text-align: left; }
+    .contMainFaqs main .tituloFaqs h1 {
+      font-size: 5rem; }
+  .contMainFaqs .section1 .subFaqs {
     display: inline-block;
-    margin-left: 4.75rem; }
-    .section1 .subFaqs h2 {
+    margin-left: 4rem; }
+    .contMainFaqs .section1 .subFaqs h2 {
       font-weight: bold;
       margin-bottom: 1rem;
       text-align: left;
-      font-size: 2.5rem;
-      color: whitesmoke;
-      background-color: #539dde; } }
+      font-size: 2rem;
+      color: white;
+      background-color: #f0a83c; }
+  .contMainFaqs .section2 .contS2Faq .accordion {
+    margin: 1rem 3rem; }
+    .contMainFaqs .section2 .contS2Faq .accordion .estilosAcordion {
+      margin: 1.5rem 4rem; } }
+
+/*----cierre Main-Faqs----*/
+@media only screen and (min-width: 1024px) {
+  /*----Prop Main-Faqs----*/
+  .contMainFaqs main .tituloFaqs h1 {
+    font-size: 7rem; }
+  .contMainFaqs .section1 .subFaqs h2 {
+    font-size: 2.5rem; }
+  .contMainFaqs .section2 .contS2Faq .accordion {
+    margin: 1rem 5rem; }
+    .contMainFaqs .section2 .contS2Faq .accordion .estilosAcordion {
+      margin: 2rem 6rem; } }
 
 /*----Cierre Main-Faqs----*/
 /*---------------------------------/
@@ -709,7 +735,7 @@ header {
   background-color: #A3E4D7;
   position: sticky;
   top: 0;
-  z-index: 1; }
+  z-index: 3; }
 
 .contMainCu {
   grid-area: main; }
@@ -725,8 +751,8 @@ header {
 
 footer {
   grid-area: footer;
-  font-family: 'Roboto', sans-serif;
-  background-color: rgba(112, 105, 105, 0.692); }
+  font-family: "Roboto", sans-serif;
+  background-color: whitesmoke; }
 
 .contMainCu {
   background-image: url(../../img/madera.jpg);
