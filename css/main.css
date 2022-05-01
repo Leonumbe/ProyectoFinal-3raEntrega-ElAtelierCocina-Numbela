@@ -8,7 +8,7 @@
   display: flex;
   align-items: center; }
 
-.contMainFtg main .tituloFtg h1, .contMainFaqs main .tituloFaqs h1 {
+.fondoAu1 main .tituloAu h1, .contMainFtg main .tituloFtg h1, .contMainFaqs main .tituloFaqs h1 {
   font-size: 3rem;
   font-weight: bolder;
   padding: 1rem 0rem; }
@@ -79,6 +79,7 @@ header {
   display: none; }
 
 /*----cierre-Header----*/
+/*-----------------------------*/
 /*----Prop Footer----*/
 footer {
   margin-top: 0.1rem; }
@@ -107,6 +108,7 @@ footer {
         transition: 0.5s; }
 
 /*----Cierre-Footer----*/
+/*-----------------------------*/
 /*----Prop-index----*/
 /*Prop carrusel*/
 .section1 .contGralCarrusel .contCarrusel img {
@@ -164,9 +166,8 @@ footer {
       max-width: 150px; }
     header .headerMenu nav ul li a {
       font-size: 1.05rem; }
-    header .headerChart {
-      display: none; }
   /*----cierre-Header----*/
+  /*-----------------------------*/
   /*----Prop Footer----*/
   footer {
     display: flex;
@@ -187,24 +188,21 @@ footer {
       footer .footerRedes .sideF, footer .footerRedes .sideI {
         width: 20%; }
   /*----Cierre-Footer----*/
+  /*-----------------------------*/
   /*----Prop-index----*/
   /*Prop carrusel*/
   .section1 .contGralCarrusel {
     max-width: 60rem;
     margin: auto; }
-    .section1 .contGralCarrusel .contCarrusel img {
-      border: 0.1rem solid whitesmoke; }
   main .mainIndex .editHead {
     font-size: 3rem;
     padding: 1.5rem 1rem;
     margin-bottom: 0rem; }
   main .mainIndex .editSubt {
-    font-size: 2rem;
+    font-size: 2.25rem;
     padding-bottom: 1rem; }
   main .mainIndex .editP {
     display: block;
-    color: #1c2833be;
-    font-weight: bold;
     font-size: 1rem;
     padding: 0rem 6.66667rem;
     padding-bottom: 1rem;
@@ -239,14 +237,10 @@ footer {
         header .headerMenu nav ul li a {
           justify-content: end;
           align-items: center;
-          font-size: 1.25rem;
-          font-weight: bold; }
+          font-size: 1.25rem; }
   /*----Cierre-header----*/
   /*----Prop Footer----*/
   footer {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
     height: 12vh; }
     footer .footerImgC {
       margin-left: 4rem;
@@ -269,19 +263,19 @@ footer {
     background-size: cover; }
     .fondoIndex .contGralCarrusel {
       padding: 0.1rem; }
-  main .mainIndex .editHead {
-    font-size: 5rem;
-    padding-top: 2rem;
-    padding-bottom: 1rem; }
-  main .mainIndex .editSubt {
-    font-size: 3rem; }
-  main .mainIndex .editP {
-    display: block;
-    margin: 0rem 7rem;
-    padding-bottom: 1.75rem;
-    font-size: 1.75rem; }
+  main .mainIndex {
+    border-top: 1px solid white; }
+    main .mainIndex .editHead {
+      font-size: 5rem;
+      padding-top: 2rem;
+      padding-bottom: 1rem; }
+    main .mainIndex .editSubt {
+      font-size: 3rem; }
+    main .mainIndex .editP {
+      margin: 0rem 7rem;
+      padding-bottom: 1.75rem;
+      font-size: 1.75rem; }
   .section2 div .wsAnime {
-    bottom: 7rem;
     width: 150px; } }
 
 /*----Cierre-Main-Index----*/
@@ -318,12 +312,12 @@ footer {
   background-color: whitesmoke; }
 
 .fondoAu1 main .tituloAu {
-  padding: 1rem  2rem;
+  font-family: 'Roboto', sans-serif;
   text-align: center;
-  font-size: 1rem;
-  font-weight: bold;
-  color: #1C2833;
   background-color: #fef6f6; }
+  .fondoAu1 main .tituloAu h1 {
+    color: #1C2833;
+    margin: 0; }
 
 .fondoAu1 .section1 .block1Au img {
   width: 100%; }
@@ -347,18 +341,22 @@ footer {
     font-family: 'Roboto', sans-serif;
     font-size: 1rem;
     color: whitesmoke;
-    background-color: #353d45; }
+    background-color: #353d45;
+    margin-bottom: 0; }
   .fondoAu1 .section1 .block2Au video {
     width: 100%;
     height: 70%; }
 
 .section2 .subAboutUs {
-  padding: 0.75rem;
+  font-family: 'Roboto', sans-serif;
   text-align: center;
-  font-size: 1rem;
-  font-weight: bold;
-  color: #1C2833;
-  background-color: #fef6f6; }
+  background-color: #fef6f6;
+  padding: 1rem; }
+  .section2 .subAboutUs h2 {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #353d45;
+    margin: 0; }
 
 .section2 .card-group .card {
   margin: 0;
@@ -376,8 +374,8 @@ footer {
     .section2 .card-group .card .card-body-2 .card-text {
       display: flex;
       justify-content: center;
-      text-align: justify;
       align-items: center;
+      text-align: justify;
       padding: 1rem;
       color: white;
       height: 10rem; }
@@ -386,18 +384,14 @@ footer {
 @media only screen and (min-width: 480px) {
   /*-----Prop AboutUs------*/
   .fondoAu1 main .tituloAu {
-    padding: 1rem  2rem;
-    text-align: left;
-    background-color: #fef6f6; }
-    .fondoAu1 main .tituloAu h1 {
-      font-size: 2.5rem;
-      font-weight: bold;
-      color: #353d45; }
+    margin-left: 3rem;
+    padding: 1.5rem 0rem;
+    text-align: left; }
   .fondoAu1 .section1 .block1Au {
     display: flex;
-    flex-flow: row nowrap;
     justify-content: center;
     align-items: center;
+    flex-flow: row nowrap;
     background-color: #353d45; }
     .fondoAu1 .section1 .block1Au img {
       margin: 0;
@@ -551,20 +545,21 @@ footer {
 /*----Prop Main-FoodtoGo----*/
 /*contenedor cuerpo Main*/
 .contMainFtg {
+  background-image: url(../../img/pared.jpg);
+  background-size: cover;
+  border-top: 0.1rem  solid white;
   /*Prop Cards*/ }
   .contMainFtg main .tituloFtg {
     font-family: 'Roboto', sans-serif;
     text-align: center;
-    background-color: #ffeca9;
-    margin: 0.1rem 0rem; }
+    background-color: rgba(255, 255, 255, 0.712);
+    border-bottom: 0.1rem  solid white; }
     .contMainFtg main .tituloFtg h1 {
-      color: #353d45;
+      color: #f0a83c;
       margin: 0; }
     .contMainFtg main .tituloFtg h2 {
       display: none; }
   .contMainFtg .section1 .contS1Prod {
-    background-image: url(../../img/pared.jpg);
-    background-size: cover;
     display: flex;
     flex-flow: row wrap;
     justify-content: space-evenly; }
@@ -593,16 +588,20 @@ footer {
   /*--Prop Main-FoodtoGo--*/
   .contMainFtg main .tituloFtg {
     padding-left: 4rem;
-    text-align: left; }
+    text-align: left;
+    background-color: rgba(255, 255, 255, 0.329); }
     .contMainFtg main .tituloFtg h1 {
-      font-size: 5rem; }
+      font-size: 5rem;
+      color: #f0a83c; }
     .contMainFtg main .tituloFtg h2 {
-      display: block;
+      display: inline-block;
       text-align: left;
       font-size: 2.5rem;
       font-weight: bold;
-      margin-bottom: 0;
-      color: #353d45; }
+      margin-bottom: 1rem;
+      padding: 0rem 3rem;
+      color: white;
+      background-color: #f0a83c; }
   .contMainFtg .section1 .contS1Prod .card {
     max-width: 13rem;
     margin: 1.75rem 2rem; }
@@ -638,7 +637,7 @@ header {
   background-color: #A3E4D7;
   position: sticky;
   top: 0;
-  z-index: 1; }
+  z-index: 3; }
 
 .contMainFaqs {
   grid-area: main; }

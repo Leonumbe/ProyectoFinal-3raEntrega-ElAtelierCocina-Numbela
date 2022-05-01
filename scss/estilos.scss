@@ -21,8 +21,7 @@
 //ubicacion del logo
 header{
    .headerLogo{
-      text-align: center;
-      padding: 0.2rem;
+      @include logoStile;
       img{
          max-width: 115px;
          //animacion del logo + link
@@ -56,7 +55,7 @@ header{
                padding: 0px 3px;
                transform: scale(1.2);
                transform: translate(0.1rem, 0.1rem);
-               box-shadow: 3px 3px rgb(51, 51, 51);
+               box-shadow: 3px 3px $colorShadow;
                transition: 0.5s;
             }
          }
@@ -66,9 +65,10 @@ header{
    .headerChart{  
       display: none;
    }
-
 /*----cierre-Header----*/
 //--version Mobile
+
+/*-----------------------------*/
 
 /*----Prop Footer----*/
 //--version Mobile
@@ -115,6 +115,8 @@ footer{
 }
 /*----Cierre-Footer----*/
 //--version Mobile
+
+/*-----------------------------*/
 
 /*----Prop-index----*/
 //--version Mobile
@@ -192,19 +194,17 @@ footer{
       }
       /*Prop del Menu*/
       .headerMenu nav ul{
-            li{
-               a{
-                  font-size: 1.05rem;
-               }
+         li{
+            a{
+               font-size: 1.05rem;
             }
          }
-      //ajuste medida del carrito
-      .headerChart{  
-            display: none;
       }
    }
   /*----cierre-Header----*/
   //--version tablet
+
+  /*-----------------------------*/
   
   /*----Prop Footer----*/
   //--version tablet
@@ -239,20 +239,17 @@ footer{
    }
   /*----Cierre-Footer----*/
   //--version tablet
+
+  /*-----------------------------*/
   
   /*----Prop-index----*/
   //--version tablet
+
   /*Prop carrusel*/
    .section1{
       .contGralCarrusel{
          max-width: 60rem;
          margin: auto;
-         .contCarrusel{
-            img{
-               border: 0.1rem solid rgb(245, 245, 245);
-            }
-         }
-        
       }
    }
   //section2-Prop. H1-H2-P
@@ -264,13 +261,11 @@ footer{
             margin-bottom: 0rem;
          }
          .editSubt{
-         font-size: 2rem;
+         font-size: 2.25rem;
          padding-bottom: 1rem;
          }
          .editP{
             display: block;
-            color: nth($colorFuente, 6);
-            font-weight: bold;
             font-size: 1rem;
             padding: 0rem $pdP/3;
             padding-bottom: 1rem;
@@ -321,7 +316,6 @@ footer{
                   justify-content: end;
                   align-items: center;
                   font-size: 1.25rem;
-                  font-weight: bold;
                   }
                }
             }
@@ -334,9 +328,6 @@ footer{
    /*----Prop Footer----*/
    //---version desktop 
    footer{
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
       height: 12vh;
       //Prop de "C"
       .footerImgC{
@@ -382,6 +373,7 @@ footer{
    //size, margins & paddins
    main{
       .mainIndex{
+         border-top: 1px solid $colorBorde;
          .editHead{
             font-size: 5rem;
             padding-top: 2rem;
@@ -391,7 +383,6 @@ footer{
             font-size: 3rem;
          }
          .editP{
-            display: block;
             margin: 0rem $mgP - 13;
             padding-bottom: 1.75rem;
             font-size: 1.75rem;
@@ -400,7 +391,6 @@ footer{
    }
    .section2 div{
       .wsAnime{
-         bottom: 7rem;
          width: 150px;
       }
    }
@@ -420,12 +410,14 @@ footer{
 .fondoAu1{
    main{
       .tituloAu{
-         padding: 1rem  2rem;
+         font-family: 'Roboto', sans-serif;
          text-align: center;
-         font-size: 1rem;
-         font-weight: bold;
+         background-color: $colorFondo6;
+         h1{
          color:nth($colorFuente,4);
-         background-color: rgb(254, 246, 246);
+         @extend %titulo1B;
+         margin: 0;
+         }
       }
    }
    //Section1
@@ -447,6 +439,7 @@ footer{
          @extend %stileBlock;
          p{
             @include blockP;
+            margin-bottom: 0;
          }
          video{
             width: 100%;
@@ -458,36 +451,36 @@ footer{
 //Prop Filosofia
 .section2{
    .subAboutUs{
-      padding: 0.75rem;
+      font-family: 'Roboto', sans-serif;
       text-align: center;
-      font-size: 1rem;
-      font-weight: bold;
-      color: #1C2833;
-      background-color: rgb(254, 246, 246);
+      background-color: $colorFondo6;
+      padding: 1rem;
+      h2{
+         font-size: 2rem;
+         font-weight: bold;
+         color:nth($colorFuente, 11);
+         margin: 0;
+      }
    }
    .card-group{
       .card{
          margin: 0;
          text-align: center;
          .card-body-1, .card-body-3{
-            background-color: rgb(240, 168, 60);
+            background-color: $colorFondo4;
             .card-title{
-               display: flex;
-               justify-content: center;
-               align-items: center;
-               color: white;
+               @include flexCenter;
+               color: nth($colorFuente, 13);
                height: 7vh;
             }
          }
          .card-body-2{
-            background-color: rgb(69, 154, 69);
+            background-color: $colorFondo5;
             .card-text{
-               display: flex;
-               justify-content: center;
+               @include flexCenter;
                text-align: justify;
-               align-items: center;
                padding: 1rem ;
-               color: white;
+               color: nth($colorFuente, 13);
                height: 10rem;
             }
          }
@@ -506,25 +499,17 @@ footer{
       //titulo About Us
       main{
          .tituloAu{
-            padding: 1rem  2rem;
+            margin-left: 3rem;
+            padding: 1.5rem 0rem;
             text-align: left;
-            background-color: rgb(254, 246, 246);
-            h1{
-               font-size: 2.5rem;
-               font-weight: bold;
-               color: #353d45;
-            }
          }
       }
       //Section1
       .section1{
          .block1Au{
-         // background-color: $colorFondo1;
-            display: flex;
+            @include flexCenter;
             flex-flow: row nowrap;
-            justify-content: center;
-            align-items: center;
-            background-color:  #353d45;
+            background-color: nth($colorFuente,11);
             img{
                margin: 0;
                padding-left: 0.5rem;
@@ -729,14 +714,16 @@ footer{
 
 /*contenedor cuerpo Main*/
 .contMainFtg{
+   @include estiloFondo1;
+   border-top: 0.1rem  solid white;
    main{
       .tituloFtg{
          font-family: 'Roboto', sans-serif;
          text-align: center;
-         background-color: $colorFondo7;
-         margin: 0.1rem 0rem;
+         background-color: rgba(255, 255, 255, 0.712);
+         border-bottom: 0.1rem  solid white;
          h1{
-         color: nth($colorFuente,11);
+         color: nth($colorFuente,12);
          @extend %titulo1B;
          margin: 0;
          }
@@ -748,7 +735,7 @@ footer{
    /*Prop Cards*/
    .section1{
       .contS1Prod{
-         @include estiloFondo1;
+         //@include estiloFondo1;
          display: flex;
          flex-flow: row wrap;
          justify-content:space-evenly;
@@ -789,16 +776,20 @@ footer{
          .tituloFtg{
             padding-left: 4rem;
             text-align: left;
+            background-color: rgba(255, 255, 255, 0.329);
             h1{
                font-size: 5rem;
+               color: nth($colorFuente,12);
             }
             h2{
-            display: block;
+            display: inline-block;
             text-align: left;
             font-size: 2.5rem;
             font-weight: bold;
-            margin-bottom: 0;
-            color: nth($colorFuente,11);
+            margin-bottom: 1rem;
+            padding: 0rem 3rem;
+            color: nth($colorFuente,13);
+            background-color: $colorFondo4;
             }
          }
       }
