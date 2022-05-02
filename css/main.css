@@ -259,7 +259,7 @@ footer {
   /*-----------------------------*/
   /*----Prop Main-Index----*/
   .fondoIndex {
-    background-image: url(../../img/pared.jpg);
+    background-image: url(../img/pared.jpg);
     background-size: cover; }
     .fondoIndex .contGralCarrusel {
       padding: 0.1rem; }
@@ -531,7 +531,7 @@ footer {
 /*----Prop Main-FoodtoGo----*/
 /*contenedor cuerpo Main*/
 .contMainFtg {
-  background-image: url(../../img/pared.jpg);
+  background-image: url(../img/pared.jpg);
   background-size: cover;
   border-top: 0.1rem solid white;
   /*Prop Cards*/ }
