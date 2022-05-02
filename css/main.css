@@ -17,12 +17,7 @@
 .contenedorPadreIndex {
   height: 80vh;
   display: grid;
-  grid-template-areas: "header header header header"
- "section1 section1 section1 section1"
- "main main main main"
- "section2 section2 section2 section2"
- "section3 section3 section3 section3"
- "footer footer footer footer"; }
+  grid-template-areas: "header header header header" "section1 section1 section1 section1" "main main main main" "section2 section2 section2 section2" "section3 section3 section3 section3" "footer footer footer footer"; }
 
 /*Prop Hijos*/
 header {
@@ -47,38 +42,38 @@ footer {
   background-color: whitesmoke; }
 
 /*----Propiedades header----*/
-header {
-  /*Prop del Menu*/ }
-  header .headerLogo {
-    text-align: center;
-    padding: 0.2rem; }
-    header .headerLogo img {
-      max-width: 115px; }
-      header .headerLogo img:hover {
-        transform: scale(1.025);
-        transition: 0.5s; }
-  header .headerMenu nav ul {
-    list-style: none;
-    text-align: center;
-    padding-left: 0;
-    padding-bottom: 0,5rem;
-    margin: 0; }
-    header .headerMenu nav ul li {
-      display: inline-block;
-      margin: 0.1rem; }
-    header .headerMenu nav ul a {
-      font-size: 0.85rem;
-      font-weight: bold;
-      color: white;
-      text-decoration: none; }
-      header .headerMenu nav ul a:hover {
-        color: #f0a83c;
-        border-radius: 0.5rem;
-        padding: 0px 3px;
-        transform: scale(1.2);
-        transform: translate(0.1rem, 0.1rem);
-        box-shadow: 3px 3px #333333;
-        transition: 0.5s; }
+.headerLogo {
+  text-align: center;
+  padding: 0.2rem; }
+  .headerLogo img {
+    max-width: 115px; }
+    .headerLogo img:hover {
+      transform: scale(1.025);
+      transition: 0.5s; }
+
+/*Prop del Menu*/
+.headerMenu nav ul {
+  list-style: none;
+  text-align: center;
+  padding-left: 0;
+  padding-bottom: 0,5rem;
+  margin: 0; }
+  .headerMenu nav ul li {
+    display: inline-block;
+    margin: 0.1rem; }
+  .headerMenu nav ul a {
+    font-size: 0.85rem;
+    font-weight: bold;
+    color: white;
+    text-decoration: none; }
+    .headerMenu nav ul a:hover {
+      color: #f0a83c;
+      border-radius: 0.5rem;
+      padding: 0px 3px;
+      transform: scale(1.2);
+      transform: translate(0.1rem, 0.1rem);
+      box-shadow: 3px 3px #333333;
+      transition: 0.5s; }
 
 .headerChart {
   display: none; }
@@ -165,12 +160,11 @@ footer {
 /*----cierre-index----*/
 @media only screen and (min-width: 480px) {
   /*-----Prop Header------*/
-  header {
-    /*Prop del Menu*/ }
-    header .headerLogo img {
-      max-width: 150px; }
-    header .headerMenu nav ul li a {
-      font-size: 1.05rem; }
+  .headerLogo img {
+    max-width: 150px; }
+  /*Prop del Menu*/
+  .headerMenu nav ul li a {
+    font-size: 1.05rem; }
   /*----cierre-Header----*/
   /*-----------------------------*/
   /*----Prop Footer----*/
@@ -289,12 +283,7 @@ footer {
 .contenedorPadreAu {
   height: 80vh;
   display: grid;
-  grid-template-areas: "header header header header"
- "main main main main"
- "section1 section1 section1 section1"
- "section2 section2 section2 section2"
- "section3 section3 section3 section3"
- "footer footer footer footer"; }
+  grid-template-areas: "header header header header" "main main main main" "section1 section1 section1 section1" "section2 section2 section2 section2" "section3 section3 section3 section3" "footer footer footer footer"; }
 
 /*Prop-Hijos*/
 header {
@@ -511,12 +500,7 @@ footer {
 /*Grid-Food to Go*/
 .contenedorPadreFtg {
   display: grid;
-  grid-template-areas: "header header header header"
- "main main main main"
- "section1 section1 section1 section1"
- "section2 section2 section2 section2"
- "section3 section3 section3 section3"
- "footer footer footer footer"; }
+  grid-template-areas: "header header header header" "main main main main" "section1 section1 section1 section1" "section2 section2 section2 section2" "section3 section3 section3 section3" "footer footer footer footer"; }
 
 /*Prop-Hijos*/
 header {
@@ -546,7 +530,7 @@ footer {
 /*----Prop Main-FoodtoGo----*/
 /*contenedor cuerpo Main*/
 .contMainFtg {
-  background-image: url(../../img/pared.jpg);
+  background-image: url(../img/pared.jpg);
   background-size: cover;
   border-top: 0.1rem solid white;
   /*Prop Cards*/ }
@@ -630,12 +614,7 @@ footer {
 .contenedorPadreFaq {
   height: 80vp;
   display: grid;
-  grid-template-areas: "header header header header"
- "main main main main"
- "section1 section1 section1 section1"
- "section2 section2 section2 section2"
- "section3 section3 section3 section3"
- "footer footer footer footer"; }
+  grid-template-areas: "header header header header" "main main main main" "section1 section1 section1 section1" "section2 section2 section2 section2" "section3 section3 section3 section3" "footer footer footer footer"; }
 
 /*Prop-Hijos*/
 header {
@@ -732,12 +711,7 @@ footer {
 .contenedorPadreCu {
   height: 80vh;
   display: grid;
-  grid-template-areas: "header header header header"
- "main main main main"
- "section1 section1 section1 section1"
- "section2 section2 section2 section2"
- "section3 section3 section3 section3"
- "footer footer footer footer"; }
+  grid-template-areas: "header header header header" "main main main main" "section1 section1 section1 section1" "section2 section2 section2 section2" "section3 section3 section3 section3" "footer footer footer footer"; }
 
 /*propiedades hijos*/
 header {
