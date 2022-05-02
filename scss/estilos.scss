@@ -410,9 +410,7 @@ footer{
 .fondoAu1{
    main{
       .tituloAu{
-         font-family: 'Roboto', sans-serif;
-         text-align: center;
-         background-color: $colorFondo6;
+         @include stileH380;
          h1{
          color:nth($colorFuente,4);
          @extend %titulo1B;
@@ -451,9 +449,7 @@ footer{
 //Prop Filosofia
 .section2{
    .subAboutUs{
-      font-family: 'Roboto', sans-serif;
-      text-align: center;
-      background-color: $colorFondo6;
+      @include stileH380;
       padding: 1rem;
       h2{
          font-size: 2rem;
@@ -496,11 +492,9 @@ footer{
 
    //contenedor Main-AboutUs
    .fondoAu1{
-      //titulo About Us
       main{
          .tituloAu{
-            margin-left: 3rem;
-            padding: 1.5rem 0rem;
+            padding: 1.5rem 0rem 1.5rem 3rem;
             text-align: left;
          }
       }
@@ -512,7 +506,7 @@ footer{
             background-color: nth($colorFuente,11);
             img{
                margin: 0;
-               padding-left: 0.5rem;
+               padding-left: 1rem;
                padding-top: 0.5rem;
                max-width: 30%;
             // border:5px solid white;
@@ -526,21 +520,17 @@ footer{
             }
          }
          .block2Au{
-            display: flex;
+            @include flexCenter;
             flex-flow: row nowrap;
-            justify-content: center;        
-            align-items: center;
-            background-color:  #353d45;
+            background-color:  $colorFondo9;
             p{
                @include blockP;
                margin-bottom: 0;
                text-align: justify;
             }
             video{
-               //margin: 0.3rem;
-            // border: 5px solid rgb(19, 12, 12);
                max-width: 40%;
-               padding-right: 0.5rem;
+               padding-right: 1rem;
                padding-bottom: 0.5rem;
             }
          }
@@ -551,29 +541,7 @@ footer{
       .subAboutUs{
          padding: 0.75rem;
          h2{
-            font-size: 1.5rem;
-            color: #353d45;
-         }
-      }
-      .card-group{
-         .card{
-            margin: 0;
-            .card-body-1, .card-body-3{
-               background-color: rgb(240, 168, 60);
-               .card-title{
-                  display: flex;
-                  justify-content: center;
-                  align-items: center;
-                  color: white;
-                  height: 7vh;
-               }
-            }
-            .card-body-2{
-               .card-text{
-                  padding: 1rem;
-                  color: white;
-               }
-            }
+            font-size: 2.15rem;
          }
       }
    }
@@ -592,23 +560,20 @@ footer{
       .section2{
          .subAboutUs{
             text-align: left;
-            padding-left: 2rem ;
+            padding-left: 3rem;
          }
          .card-group{
-         margin: 0rem;
             .card{
-               margin: 0;
                .card-body-1, .card-body-3{
                   height: 100%;
                }
                .card-body-2{
+                  @include flexCenter;
                   height: 100%;
-                  background-color: rgb(69, 154, 69);
                   .card-text{
                      text-align: center;
-                     font-size: 0.75rem;
-                     padding: 0;
-                     color: white;
+                     font-size: 0.90rem;
+                     padding: 0rem 0.25rem;
                   }
                }
             }
@@ -623,12 +588,10 @@ footer{
          .card-group{
             .card{
                .card-body-2{
-                  display: flex;
-                  justify-content: center;
-                  align-items: center;
+                  @include flexCenter;
                   .card-text{
-                     font-size: 1.15rem !important;
-                     padding: 0.15rem;
+                     font-size: 1.15rem;
+                     padding: 0rem 0.5rem;
                   }
                }
             }
@@ -687,7 +650,7 @@ footer{
       .subAboutUs{
          padding: 1rem 2rem;
          h2{
-            font-size: 2rem;
+            font-size: 2.25rem;
             margin-bottom: 0;
          }
       }
@@ -715,13 +678,13 @@ footer{
 /*contenedor cuerpo Main*/
 .contMainFtg{
    @include estiloFondo1;
-   border-top: 0.1rem  solid white;
+   border-top: 0.1rem  solid $colorBorde;
    main{
       .tituloFtg{
-         font-family: 'Roboto', sans-serif;
+         font-family: $tipoFuente;
          text-align: center;
-         background-color: rgba(255, 255, 255, 0.712);
-         border-bottom: 0.1rem  solid white;
+         background-color:$colorFondo2;
+         border-bottom: 0.1rem  solid $colorBorde;
          h1{
          color: nth($colorFuente,12);
          @extend %titulo1B;
@@ -735,7 +698,6 @@ footer{
    /*Prop Cards*/
    .section1{
       .contS1Prod{
-         //@include estiloFondo1;
          display: flex;
          flex-flow: row wrap;
          justify-content:space-evenly;
@@ -774,22 +736,22 @@ footer{
    .contMainFtg{
       main{
          .tituloFtg{
-            padding-left: 4rem;
+            padding-left: 3rem;
             text-align: left;
-            background-color: rgba(255, 255, 255, 0.329);
+            background-color: $colorFondo10;
             h1{
                font-size: 5rem;
                color: nth($colorFuente,12);
             }
             h2{
-            display: inline-block;
-            text-align: left;
-            font-size: 2.5rem;
-            font-weight: bold;
-            margin-bottom: 1rem;
-            padding: 0rem 3rem;
-            color: nth($colorFuente,13);
-            background-color: $colorFondo4;
+               display: inline-block;
+               text-align: left;
+               font-size: 2.5rem;
+               font-weight: bold;
+               margin-bottom: 1rem;
+               padding: 0rem 3rem;
+               color: nth($colorFuente,13);
+               background-color: $colorFondo4;
             }
          }
       }
@@ -859,7 +821,6 @@ footer{
 .contMainFaqs{
    @include estiloFondo3;
    font-family:$tipoFuente;
-   //color: #1C2833;
    main{
       .tituloFaqs{
          text-align: center;
@@ -883,7 +844,7 @@ footer{
             .estilosAcordion{
                margin: 1rem 2rem;
                .estiloTextoAcord{
-                  background-color: white;
+                  background-color: $colorFondo11;
                   font-weight: bold;
                   padding: 1rem;
                   font-size: 1rem;
@@ -912,7 +873,7 @@ footer{
    .contMainFaqs{
       main{
          .tituloFaqs{
-            padding-left: 4rem;
+            padding-left: 3rem;
             text-align: left;
             h1{
             font-size: 5rem;
@@ -922,14 +883,14 @@ footer{
       .section1{     
          .subFaqs {
             display: inline-block;
-            margin-left: 4rem;
+            margin-left: 3rem;
             h2{
-            font-weight: bold;
-            margin-bottom: 1rem;
-            text-align: left;
-            font-size: 2rem;
-            color: nth($colorFuente, 13);
-            background-color:$colorFondo4;
+               font-weight: bold;
+               margin-bottom: 1rem;
+               text-align: left;
+               font-size: 2rem;
+               color: nth($colorFuente, 13);
+               background-color:$colorFondo4;
             }
          }
       }
@@ -991,15 +952,15 @@ footer{
 @import "layout/gridCu";
 
 .contMainCu{
-   font-family:'Roboto', sans-serif;
+   font-family: $tipoFuente;
    .contMainCu2{
       main{
          .tituloCu{
-            padding: 1rem  2rem;
-            text-align: center;
+            padding:1rem;
+            @include stileH380;
             h1{
                margin-bottom: 0;
-               font-size: 2rem;
+               font-size: 3rem;
                font-weight: bold;
                color:nth($colorFuente,12);
             }
@@ -1009,9 +970,8 @@ footer{
                @extend %stileBlock;
                justify-content: left;
                h3{
-                  font-size: 0.80rem;
+                  font-size: 0.8rem;
                   font-weight: 700;
-
                }
                img{
                   width: 15%;
@@ -1030,8 +990,8 @@ footer{
       //Prop subtitulo
       .section1{
          .subTituloCu{
-            padding: 1rem  2rem;
-            text-align: center;
+            padding: 1rem;
+            @include stileH380;
             h2{
                margin-bottom: 0;
                font-size: 2rem;
@@ -1096,8 +1056,10 @@ footer{
       .contMainCu2{
          display: flex;
          justify-content:space-evenly;
+         align-items: stretch;
          main{
             .tituloCu{
+               background-color: $colorFondo11;
                h1{
                   margin-top: 2.5rem;
                   margin-bottom: 1rem;
@@ -1111,11 +1073,6 @@ footer{
                   h3{
                      font-size: 1rem;
                   }
-                  img{
-                     width: 15%;
-                     margin-left: 2.5rem;
-                     padding: 0.75rem;
-                  }
                }
                .mapaCu{
                   margin: 1rem;
@@ -1128,7 +1085,8 @@ footer{
          }
          .section1{
             .subTituloCu{
-               padding: 1rem 0.5rem;
+               padding: 1rem 0rem  1rem 0.5rem;
+               background-color: $colorFondo11;
                h2{
                   margin-top: 2.5rem;
                   margin-bottom: 1rem;
@@ -1139,7 +1097,6 @@ footer{
             } 
             //complemento boostrap
             .contFormCu{
-               text-align: left;
                margin: 0rem 0.5rem;
                padding: 0rem;
                .formCu{
@@ -1151,7 +1108,7 @@ footer{
                      margin: 0.5rem 1rem;
                      padding: 0rem;
                      .form-control{
-                        padding: 0.3rem 0rem;
+                        padding: 0.3rem 3rem;
                      }
                   }
                   .bottonForm{
@@ -1165,7 +1122,7 @@ footer{
       //Animacion Botton-back    
       .section2{
          .backHomeCu{
-         margin: 1rem;
+            margin: 1rem;
             img{
                max-width: 80px;
             }
@@ -1184,7 +1141,7 @@ footer{
    .contMainCu{
       .contMainCu2{
          main{
-            border: 2px solid whitesmoke;
+            border: 2px solid $colorFondo8;
             .tituloCu{
                h1{
                   font-size: 3rem;
@@ -1192,7 +1149,7 @@ footer{
             } 
          }
          .section1{
-            border: 2px solid whitesmoke;
+            border: 2px solid $colorFondo8;
             .subTituloCu{
                padding: 1rem 1rem;
                h2{
@@ -1204,16 +1161,14 @@ footer{
          .contFormCu{
             margin: 1rem 0.5rem;
             .formCu{
-               margin: 0rem;
                .stileForm{
                   font-size: 1.25rem;
-                  margin: 0rem 7rem;
-                  padding: 1rem 7rem;
                   .form-label{
                      margin-top: 1rem;
                   }
                   .form-control{
-                     margin: 0rem 5rem 0rem 0rem;
+                     padding:0.5rem 3rem;
+                     margin: 0rem 3rem 0rem 0rem;
                   }
                }
                .bottonForm{
@@ -1234,7 +1189,6 @@ footer{
             }
          p{
             font-size: 1rem;
-           
          }
       }
    }   
