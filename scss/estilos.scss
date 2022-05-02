@@ -19,52 +19,51 @@
 //---Version Mobile
 
 //ubicacion del logo
-header{
-   .headerLogo{
-      @include logoStile;
-      img{
-         max-width: 115px;
-         //animacion del logo + link
+.headerLogo{
+   @include logoStile;
+   img{
+      max-width: 115px;
+      //animacion del logo + link
+      &:hover{
+         transform: scale(1.025);
+         transition: 0.5s;  
+      }
+   }
+}
+/*Prop del Menu*/
+.headerMenu nav ul{
+   list-style: none;
+   text-align: center;
+   padding-left: 0;
+   padding-bottom: 0,5rem;
+   margin: 0;
+   //edicion de menu
+   li{
+      display: inline-block;
+      margin: 0.1rem;
+      //eliminacion de vineta
+      a{
+         font-size: 0.85rem;
+         font-weight: bold;
+         color:nth($colorFuente,13);
+         text-decoration: none;
          &:hover{
-            transform: scale(1.025);
-            transition: 0.5s;  
+            color:nth($colorFuente, 12);
+            border-radius: 0.5rem;
+            padding: 0px 3px;
+            transform: scale(1.2);
+            transform: translate(0.1rem, 0.1rem);
+            box-shadow: 3px 3px $colorShadow;
+            transition: 0.5s;
          }
       }
    }
-   /*Prop del Menu*/
-   .headerMenu nav ul{
-      list-style: none;
-      text-align: center;
-      padding-left: 0;
-      padding-bottom: 0,5rem;
-      margin: 0;
-      //edicion de menu
-      li{
-         display: inline-block;
-         margin: 0.1rem;
-         }
-         //eliminacion de vineta
-         a{
-            font-size: 0.85rem;
-            font-weight: bold;
-            color:nth($colorFuente,13);
-            text-decoration: none;
-            &:hover{
-               color:nth($colorFuente, 12);
-               border-radius: 0.5rem;
-               padding: 0px 3px;
-               transform: scale(1.2);
-               transform: translate(0.1rem, 0.1rem);
-               box-shadow: 3px 3px $colorShadow;
-               transition: 0.5s;
-            }
-         }
-      }
-   }
-   //ajuste medida del carrito
-   .headerChart{  
-      display: none;
-   }
+}
+   
+//ajuste medida del carrito
+.headerChart{  
+   display: none;
+}
 /*----cierre-Header----*/
 //--version Mobile
 
@@ -186,18 +185,16 @@ footer{
 @media only screen and (min-width: 480px){
    /*-----Prop Header------*/
    //---version tablet
-   header{
-      .headerLogo{
-         img{
-            max-width: 150px;
-         }
+   .headerLogo{
+      img{
+         max-width: 150px;
       }
-      /*Prop del Menu*/
-      .headerMenu nav ul{
-         li{
-            a{
-               font-size: 1.05rem;
-            }
+   }
+   /*Prop del Menu*/
+   .headerMenu nav ul{
+      li{
+         a{
+            font-size: 1.05rem;
          }
       }
    }

@@ -42,31 +42,31 @@ footer {
   background-color: whitesmoke; }
 
 /*----Propiedades header----*/
-header {
-  /*Prop del Menu*/ }
-  header .headerLogo {
-    text-align: center;
-    padding: 0.2rem; }
-    header .headerLogo img {
-      max-width: 115px; }
-      header .headerLogo img:hover {
-        transform: scale(1.025);
-        transition: 0.5s; }
-  header .headerMenu nav ul {
-    list-style: none;
-    text-align: center;
-    padding-left: 0;
-    padding-bottom: 0,5rem;
-    margin: 0; }
-    header .headerMenu nav ul li {
-      display: inline-block;
-      margin: 0.1rem; }
-    header .headerMenu nav ul a {
+.headerLogo {
+  text-align: center;
+  padding: 0.2rem; }
+  .headerLogo img {
+    max-width: 115px; }
+    .headerLogo img:hover {
+      transform: scale(1.025);
+      transition: 0.5s; }
+
+/*Prop del Menu*/
+.headerMenu nav ul {
+  list-style: none;
+  text-align: center;
+  padding-left: 0;
+  padding-bottom: 0,5rem;
+  margin: 0; }
+  .headerMenu nav ul li {
+    display: inline-block;
+    margin: 0.1rem; }
+    .headerMenu nav ul li a {
       font-size: 0.85rem;
       font-weight: bold;
       color: white;
       text-decoration: none; }
-      header .headerMenu nav ul a:hover {
+      .headerMenu nav ul li a:hover {
         color: #f0a83c;
         border-radius: 0.5rem;
         padding: 0px 3px;
@@ -160,12 +160,11 @@ footer {
 /*----cierre-index----*/
 @media only screen and (min-width: 480px) {
   /*-----Prop Header------*/
-  header {
-    /*Prop del Menu*/ }
-    header .headerLogo img {
-      max-width: 150px; }
-    header .headerMenu nav ul li a {
-      font-size: 1.05rem; }
+  .headerLogo img {
+    max-width: 150px; }
+  /*Prop del Menu*/
+  .headerMenu nav ul li a {
+    font-size: 1.05rem; }
   /*----cierre-Header----*/
   /*-----------------------------*/
   /*----Prop Footer----*/
