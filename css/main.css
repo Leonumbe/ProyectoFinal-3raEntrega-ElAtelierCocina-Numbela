@@ -17,7 +17,12 @@
 .contenedorPadreIndex {
   height: 80vh;
   display: grid;
-  grid-template-areas: "header header header header" "section1 section1 section1 section1" "main main main main" "section2 section2 section2 section2" "section3 section3 section3 section3" "footer footer footer footer"; }
+  grid-template-areas: "header header header header"
+ "section1 section1 section1 section1"
+ "main main main main"
+ "section2 section2 section2 section2"
+ "section3 section3 section3 section3"
+ "footer footer footer footer"; }
 
 /*Prop Hijos*/
 header {
@@ -259,7 +264,7 @@ footer {
   /*-----------------------------*/
   /*----Prop Main-Index----*/
   .fondoIndex {
-    background-image: url(../../img/pared.jpg);
+    background-image: url(../img/pared.jpg);
     background-size: cover; }
     .fondoIndex .contGralCarrusel {
       padding: 0.1rem; }
@@ -284,7 +289,12 @@ footer {
 .contenedorPadreAu {
   height: 80vh;
   display: grid;
-  grid-template-areas: "header header header header" "main main main main" "section1 section1 section1 section1" "section2 section2 section2 section2" "section3 section3 section3 section3" "footer footer footer footer"; }
+  grid-template-areas: "header header header header"
+ "main main main main"
+ "section1 section1 section1 section1"
+ "section2 section2 section2 section2"
+ "section3 section3 section3 section3"
+ "footer footer footer footer"; }
 
 /*Prop-Hijos*/
 header {
@@ -501,7 +511,12 @@ footer {
 /*Grid-Food to Go*/
 .contenedorPadreFtg {
   display: grid;
-  grid-template-areas: "header header header header" "main main main main" "section1 section1 section1 section1" "section2 section2 section2 section2" "section3 section3 section3 section3" "footer footer footer footer"; }
+  grid-template-areas: "header header header header"
+ "main main main main"
+ "section1 section1 section1 section1"
+ "section2 section2 section2 section2"
+ "section3 section3 section3 section3"
+ "footer footer footer footer"; }
 
 /*Prop-Hijos*/
 header {
@@ -615,7 +630,12 @@ footer {
 .contenedorPadreFaq {
   height: 80vp;
   display: grid;
-  grid-template-areas: "header header header header" "main main main main" "section1 section1 section1 section1" "section2 section2 section2 section2" "section3 section3 section3 section3" "footer footer footer footer"; }
+  grid-template-areas: "header header header header"
+ "main main main main"
+ "section1 section1 section1 section1"
+ "section2 section2 section2 section2"
+ "section3 section3 section3 section3"
+ "footer footer footer footer"; }
 
 /*Prop-Hijos*/
 header {
@@ -712,7 +732,12 @@ footer {
 .contenedorPadreCu {
   height: 80vh;
   display: grid;
-  grid-template-areas: "header header header header" "main main main main" "section1 section1 section1 section1" "section2 section2 section2 section2" "section3 section3 section3 section3" "footer footer footer footer"; }
+  grid-template-areas: "header header header header"
+ "main main main main"
+ "section1 section1 section1 section1"
+ "section2 section2 section2 section2"
+ "section3 section3 section3 section3"
+ "footer footer footer footer"; }
 
 /*propiedades hijos*/
 header {
