@@ -42,41 +42,53 @@ footer {
   background-color: whitesmoke; }
 
 /*----Propiedades header----*/
-.headerLogo {
-  text-align: center;
-  padding: 0.2rem; }
-  .headerLogo img {
-    max-width: 115px; }
-    .headerLogo img:hover {
-      transform: scale(1.025);
-      transition: 0.5s; }
-
-/*Prop del Menu*/
-.headerMenu nav ul {
-  list-style: none;
-  text-align: center;
-  padding-left: 0;
-  padding-bottom: 0,5rem;
-  margin: 0; }
-  .headerMenu nav ul li {
-    display: inline-block;
-    margin: 0.1rem; }
-    .headerMenu nav ul li a {
-      font-size: 0.85rem;
-      font-weight: bold;
-      color: white;
-      text-decoration: none; }
-      .headerMenu nav ul li a:hover {
-        color: #f0a83c;
-        border-radius: 0.5rem;
-        padding: 0px 3px;
-        transform: scale(1.2);
-        transform: translate(0.1rem, 0.1rem);
-        box-shadow: 3px 3px #333333;
+header {
+  /*Complemento bootstrap Navbar*/ }
+  header .headerLogo {
+    text-align: center;
+    padding: 0.2rem; }
+    header .headerLogo .imgLogo {
+      width: 115px; }
+      header .headerLogo .imgLogo:hover {
+        transform: scale(1.025);
         transition: 0.5s; }
-
-.headerChart {
-  display: none; }
+  header .contNavbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    /*carro de compras*/ }
+    header .contNavbar .menuHeader {
+      display: inline-block; }
+      header .contNavbar .menuHeader .navbar-toggler {
+        border: none;
+        margin-left: 0.25rem; }
+      header .contNavbar .menuHeader .navbar-collapse {
+        margin: 0.5rem; }
+        header .contNavbar .menuHeader .navbar-collapse .navbar-nav .nav-item .nav-link, header .contNavbar .menuHeader .navbar-collapse .navbar-nav .nav-item .active {
+          font-size: 1rem;
+          font-weight: bold;
+          color: white;
+          text-align: left;
+          margin-left: 0.5rem; }
+          header .contNavbar .menuHeader .navbar-collapse .navbar-nav .nav-item .nav-link:hover, header .contNavbar .menuHeader .navbar-collapse .navbar-nav .nav-item .active:hover {
+            text-align: center;
+            color: #f0a83c;
+            border-radius: 0.75rem;
+            padding: 3px 8px;
+            transform: scale(1.2);
+            transform: translate(0.1rem, 0.1rem);
+            box-shadow: 3px 3px #333333;
+            transition: 1s; }
+    header .contNavbar .headerChart {
+      display: flex;
+      justify-content: center;
+      align-items: center; }
+      header .contNavbar .headerChart img {
+        width: 35px;
+        margin: 0rem 1rem 0.75rem 0rem; }
+        header .contNavbar .headerChart img:hover {
+          transform: scale(1.3);
+          transition: 0.5s; }
 
 /*----cierre-Header----*/
 /*-----------------------------*/
@@ -121,7 +133,8 @@ footer {
 
 .mainIndex {
   text-align: center;
-  background-color: #ffeca9; }
+  background-color: #ffeca9;
+  border: 0.1rem solid whitesmoke; }
   .mainIndex .editHead {
     font-size: 2.75rem;
     padding: 2rem 3rem 0rem;
@@ -160,11 +173,8 @@ footer {
 /*----cierre-index----*/
 @media only screen and (min-width: 480px) {
   /*-----Prop Header------*/
-  .headerLogo img {
-    max-width: 150px; }
-  /*Prop del Menu*/
-  .headerMenu nav ul li a {
-    font-size: 1.05rem; }
+  header .headerLogo .imgLogo {
+    width: 150px; }
   /*----cierre-Header----*/
   /*-----------------------------*/
   /*----Prop Footer----*/
@@ -208,35 +218,42 @@ footer {
     margin-bottom: 0rem; }
   .section2 div .wsAnime {
     bottom: 7rem;
-    width: 100px; }
-  /*----cierre-index----*/ }
+    width: 100px; } }
 
-@media only screen and (min-width: 1024px) {
-  /*-----Prop Header------*/
+/*----cierre-index----*/
+@media only screen and (min-width: 768px) {
+  /*----Propiedades header----*/
   header {
     display: flex;
     justify-content: space-between;
-    align-items: flex-end; }
-    header .headerLogo img {
-      width: 200px;
-      margin-left: 2.5rem; }
-    header .headerMenu, header .headerChart {
-      display: flex;
-      justify-content: center;
-      align-items: center; }
-    header .headerChart {
-      text-align: center; }
-      header .headerChart img {
-        width: 50%; }
-    header .headerMenu nav ul {
-      padding-bottom: 0.25rem; }
-      header .headerMenu nav ul li {
-        border-radius: 2rem;
-        padding: 0.1rem 0.5rem; }
-        header .headerMenu nav ul li a {
-          justify-content: end;
-          align-items: center;
-          font-size: 1.25rem; }
+    align-items: flex-end;
+    /*Complemento bootstrap Navbar*/ }
+    header .headerLogo {
+      text-align: center;
+      padding: 0.2rem; }
+      header .headerLogo img {
+        width: 180px;
+        margin-left: 2rem;
+        padding: 0.5rem 0rem; }
+    header .contNavbar {
+      /*carro de compras*/ }
+      header .contNavbar .menuHeader {
+        padding-bottom: 0; }
+        header .contNavbar .menuHeader .navbar-collapse .navbar-nav .nav-item .nav-link, header .contNavbar .menuHeader .navbar-collapse .navbar-nav .nav-item .active {
+          font-size: 1.15rem; }
+      header .contNavbar .headerChart img {
+        width: 35px;
+        margin: 0rem 1rem 0.75rem 0.5rem; } }
+
+/*----Cierre-header----*/
+@media only screen and (min-width: 1024px) {
+  /*----Prop-header----*/
+  header {
+    /*Complemento bootstrap Navbar*/ }
+    header .headerLogo .imgLogo {
+      width: 200px; }
+    header .contNavbar .menuHeader .navbar-collapse .navbar-nav .nav-item .nav-link, header .contNavbar .menuHeader .navbar-collapse .navbar-nav .nav-item .active {
+      font-size: 1.25rem; }
   /*----Cierre-header----*/
   /*----Prop Footer----*/
   footer {
@@ -293,7 +310,7 @@ header {
   top: 0;
   z-index: 3; }
 
-main {
+.contMainAu {
   grid-area: main; }
 
 .section1 {
@@ -354,7 +371,7 @@ footer {
   background-color: whitesmoke;
   border-top: 1px solid white;
   border-bottom: 1px solid white;
-  padding: 1rem; }
+  padding: 2rem 1rem; }
   .section2 .subAboutUs h2 {
     font-size: 2rem;
     font-weight: bold;
@@ -430,7 +447,7 @@ footer {
       padding-right: 1rem;
       padding-bottom: 0.5rem; }
   .section2 .subAboutUs {
-    padding: 0.75rem; }
+    padding: 2rem 0.75rem; }
     .section2 .subAboutUs h2 {
       font-size: 2.15rem; }
   .section3 .editWs .wsAnime {
@@ -488,7 +505,7 @@ footer {
     .contMainAu .fondoAu1 .section1 .block2Au video {
       width: 40%; }
   .section2 .subAboutUs {
-    padding: 1rem 2rem; }
+    padding: 2rem 2rem; }
     .section2 .subAboutUs h2 {
       font-size: 2.25rem;
       margin-bottom: 0; }
