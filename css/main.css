@@ -42,43 +42,6 @@ footer {
   background-color: whitesmoke; }
 
 /*----Propiedades header----*/
-<<<<<<< HEAD
-.headerLogo {
-  text-align: center;
-  padding: 0.2rem; }
-  .headerLogo img {
-    max-width: 115px; }
-    .headerLogo img:hover {
-      transform: scale(1.025);
-      transition: 0.5s; }
-
-/*Prop del Menu*/
-.headerMenu nav ul {
-  list-style: none;
-  text-align: center;
-  padding-left: 0;
-  padding-bottom: 0,5rem;
-  margin: 0; }
-  .headerMenu nav ul li {
-    display: inline-block;
-    margin: 0.1rem; }
-  .headerMenu nav ul a {
-    font-size: 0.85rem;
-    font-weight: bold;
-    color: white;
-    text-decoration: none; }
-    .headerMenu nav ul a:hover {
-      color: #f0a83c;
-      border-radius: 0.5rem;
-      padding: 0px 3px;
-      transform: scale(1.2);
-      transform: translate(0.1rem, 0.1rem);
-      box-shadow: 3px 3px #333333;
-      transition: 0.5s; }
-
-.headerChart {
-  display: none; }
-=======
 header {
   /*Complemento bootstrap Navbar*/ }
   header .headerLogo {
@@ -126,7 +89,6 @@ header {
         header .contNavbar .headerChart img:hover {
           transform: scale(1.3);
           transition: 0.5s; }
->>>>>>> rama06
 
 /*----cierre-Header----*/
 /*-----------------------------*/
@@ -211,16 +173,8 @@ footer {
 /*----cierre-index----*/
 @media only screen and (min-width: 480px) {
   /*-----Prop Header------*/
-<<<<<<< HEAD
-  .headerLogo img {
-    max-width: 150px; }
-  /*Prop del Menu*/
-  .headerMenu nav ul li a {
-    font-size: 1.05rem; }
-=======
   header .headerLogo .imgLogo {
     width: 150px; }
->>>>>>> rama06
   /*----cierre-Header----*/
   /*-----------------------------*/
   /*----Prop Footer----*/
