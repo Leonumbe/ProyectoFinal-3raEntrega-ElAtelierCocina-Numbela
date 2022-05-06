@@ -19,6 +19,7 @@
 //---Version Mobile
 
 //ubicacion del logo
+<<<<<<< HEAD
 .headerLogo{
    @include logoStile;
    img{
@@ -48,6 +49,14 @@
          font-weight: bold;
          color:nth($colorFuente,13);
          text-decoration: none;
+=======
+header{
+   .headerLogo{
+      @include logoStile;
+      .imgLogo{
+         width: 115px;
+         //animacion del logo + link
+>>>>>>> rama06
          &:hover{
             color:nth($colorFuente, 12);
             border-radius: 0.5rem;
@@ -59,10 +68,65 @@
          }
       }
    }
+<<<<<<< HEAD
 
 //ajuste medida del carrito
 .headerChart{  
    display: none;
+=======
+   /*Complemento bootstrap Navbar*/
+   .contNavbar{
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-end;
+      .menuHeader{
+         display:inline-block;
+         .navbar-toggler{
+            border: none;
+            margin-left: 0.25rem;
+         }
+         .navbar-collapse{
+            margin: 0.5rem;
+            .navbar-nav{
+               .nav-item{
+                  .nav-link, .active{
+                     font-size: 1rem;
+                     font-weight: bold;
+                     color:nth($colorFuente,13);
+                     //text-decoration: none;
+                     text-align: left;
+                     margin-left: 0.5rem;
+                     &:hover{
+                        text-align: center;
+                        color:nth($colorFuente, 12);
+                        border-radius: 0.75rem;
+                        padding: 3px 8px;
+                        transform: scale(1.2);
+                        transform: translate(0.1rem, 0.1rem);
+                        box-shadow: 3px 3px $colorShadow;
+                        transition: 1s;
+                     }
+                  }
+               }
+            }
+         }
+      }
+      /*carro de compras*/
+      .headerChart{
+         display: flex;
+         justify-content: center;
+         align-items: center;
+         img{
+            width: 35px;
+            margin: 0rem 1rem 0.75rem 0rem;
+            &:hover{
+               transform: scale(1.3);
+               transition: 0.5s;
+            }
+         }
+      }
+   }
+>>>>>>> rama06
 }
 /*----cierre-Header----*/
 //--version Mobile
@@ -140,6 +204,7 @@ footer{
 .mainIndex{
    text-align: center;
    background-color: $colorFondo7;
+   border: 0.1rem solid rgb(245, 245, 245);
    .editHead{
       font-size: 2.75rem;
       padding: 2rem 3rem 0rem;
@@ -185,6 +250,7 @@ footer{
 @media only screen and (min-width: 480px){
    /*-----Prop Header------*/
    //---version tablet
+<<<<<<< HEAD
    .headerLogo{
       img{
          max-width: 150px;
@@ -199,6 +265,16 @@ footer{
       }
    }
    
+=======
+   header{
+      .headerLogo{
+         .imgLogo{
+            width: 150px;
+         }
+      }
+   }
+  
+>>>>>>> rama06
   /*----cierre-Header----*/
   //--version tablet
 
@@ -278,52 +354,86 @@ footer{
          width: 100px;
       }   
    }
-   /*----cierre-index----*/
-  //version tablet
+   
 }
+/*----cierre-index----*/
+//version tablet
 
-@media only screen and (min-width: 1024px){
-      
-   /*-----Prop Header------*/
-   //---version desktop
+@media only screen and (min-width: 768px){
+   /*----Propiedades header----*/
+   //---Version tablet/desktop
+  
    header{
       display: flex;
       justify-content: space-between;
       align-items: flex-end;
-      .headerLogo img{
-         width: 200px;
-         margin-left: 2.5rem;
-      }
-      .headerMenu, .headerChart{
-         @include flexCenter
-      }
-      .headerChart{
-         text-align: center;
+      //ubicacion del logo
+      .headerLogo{
+         @include logoStile;
          img{
-            width: 50%;
+            width: 180px;
+            margin-left: 2rem;
+            padding: 0.5rem 0rem ;
          }
       }
-      .headerMenu{
-         nav{
-            ul{
-               padding-bottom: 0.25rem;
-               li{
-                  border-radius: 2rem;
-                  padding: 0.1rem 0.5rem;
-                  a{
-                  justify-content: end;
-                  align-items: center;
-                  font-size: 1.25rem;
+      /*Complemento bootstrap Navbar*/
+      .contNavbar{
+         .menuHeader{
+            padding-bottom: 0;
+            .navbar-collapse{
+               .navbar-nav{
+                  .nav-item{
+                     .nav-link, .active{
+                        font-size: 1.15rem;
+                     }
                   }
                }
             }
          }
-      } 
+         /*carro de compras*/
+         .headerChart{
+            img{
+               width: 35px;
+               margin: 0rem 1rem 0.75rem 0.5rem;
+            }
+         }
+      }
    }
-   
-   /*----Cierre-header----*/
+}   
+/*----Cierre-header----*/
+//--version tablet/desktop
+
+@media only screen and (min-width: 1024px){
+
+  
+    /*----Prop-header----*/
    //--version desktop
 
+   header{
+      .headerLogo{
+         .imgLogo{
+            width: 200px;
+         }
+      }
+
+      /*Complemento bootstrap Navbar*/
+      .contNavbar{
+         .menuHeader{
+            .navbar-collapse{
+               .navbar-nav{
+                  .nav-item{
+                     .nav-link, .active{
+                        font-size: 1.25rem;
+                     }
+                  }
+               }
+            }
+         }
+      }
+   }
+   /*----Cierre-header----*/
+   //--version desktop
+      
    /*----Prop Footer----*/
    //---version desktop 
    footer{
@@ -449,7 +559,7 @@ footer{
 .section2{
    .subAboutUs{
       @include stileH380;
-      padding: 1rem;
+      padding: 2rem 1rem;
       h2{
          font-size: 2rem;
          font-weight: bold;
@@ -538,7 +648,7 @@ footer{
    //Prop Filosofia
    .section2{
       .subAboutUs{
-         padding: 0.75rem;
+         padding: 2rem 0.75rem;
          h2{
             font-size: 2.15rem;
          }
@@ -647,7 +757,7 @@ footer{
    }
    .section2{
       .subAboutUs{
-         padding: 1rem 2rem;
+         padding: 2rem 2rem;
          h2{
             font-size: 2.25rem;
             margin-bottom: 0;
